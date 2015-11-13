@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6791BF5E9F80019AA52 /* main.m */; };
-		2EFBB67D1BF5E9F80019AA52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB67C1BF5E9F80019AA52 /* AppDelegate.m */; };
-		2EFBB6801BF5E9F80019AA52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB67F1BF5E9F80019AA52 /* ViewController.m */; };
 		2EFBB6831BF5E9F80019AA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6811BF5E9F80019AA52 /* Main.storyboard */; };
 		2EFBB6851BF5E9F80019AA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */; };
 		2EFBB6881BF5E9F80019AA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6861BF5E9F80019AA52 /* LaunchScreen.storyboard */; };
 		2EFBB6931BF5E9F80019AA52 /* ZYAnythingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6921BF5E9F80019AA52 /* ZYAnythingTests.m */; };
 		2EFBB69E1BF5E9F80019AA52 /* ZYAnythingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB69D1BF5E9F80019AA52 /* ZYAnythingUITests.m */; };
+		2EFBB6B81BF5EAFC0019AA52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6B21BF5EAFC0019AA52 /* ViewController.m */; };
+		2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6BE1BF5EB2C0019AA52 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,6 @@
 /* Begin PBXFileReference section */
 		2EFBB6751BF5E9F80019AA52 /* ZYAnything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAnything.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFBB6791BF5E9F80019AA52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EFBB67B1BF5E9F80019AA52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2EFBB67C1BF5E9F80019AA52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2EFBB67E1BF5E9F80019AA52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2EFBB67F1BF5E9F80019AA52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2EFBB6821BF5E9F80019AA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EFBB6871BF5E9F80019AA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +47,11 @@
 		2EFBB6991BF5E9F80019AA52 /* ZYAnythingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYAnythingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFBB69D1BF5E9F80019AA52 /* ZYAnythingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAnythingUITests.m; sourceTree = "<group>"; };
 		2EFBB69F1BF5E9F80019AA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFBB6B11BF5EAFC0019AA52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2EFBB6B21BF5EAFC0019AA52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2EFBB6BD1BF5EB2C0019AA52 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EFBB6BE1BF5EB2C0019AA52 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EFBB6C01BF5EB560019AA52 /* UIDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +102,8 @@
 		2EFBB6771BF5E9F80019AA52 /* ZYAnything */ = {
 			isa = PBXGroup;
 			children = (
-				2EFBB67B1BF5E9F80019AA52 /* AppDelegate.h */,
-				2EFBB67C1BF5E9F80019AA52 /* AppDelegate.m */,
-				2EFBB67E1BF5E9F80019AA52 /* ViewController.h */,
-				2EFBB67F1BF5E9F80019AA52 /* ViewController.m */,
-				2EFBB6811BF5E9F80019AA52 /* Main.storyboard */,
+				2EFBB6AB1BF5EAFC0019AA52 /* Classes */,
 				2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */,
-				2EFBB6861BF5E9F80019AA52 /* LaunchScreen.storyboard */,
 				2EFBB6891BF5E9F80019AA52 /* Info.plist */,
 				2EFBB6781BF5E9F80019AA52 /* Supporting Files */,
 			);
@@ -138,6 +134,76 @@
 				2EFBB69F1BF5E9F80019AA52 /* Info.plist */,
 			);
 			path = ZYAnythingUITests;
+			sourceTree = "<group>";
+		};
+		2EFBB6AB1BF5EAFC0019AA52 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2EFBB6BC1BF5EB2C0019AA52 /* App */,
+				2EFBB6AF1BF5EAFC0019AA52 /* Category */,
+				2EFBB6B01BF5EAFC0019AA52 /* Controllers */,
+				2EFBB6B31BF5EAFC0019AA52 /* Images */,
+				2EFBB6B41BF5EAFC0019AA52 /* Models */,
+				2EFBB6B51BF5EAFC0019AA52 /* Vendor */,
+				2EFBB6B61BF5EAFC0019AA52 /* Views */,
+				2EFBB6C01BF5EB560019AA52 /* UIDefines.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2EFBB6AF1BF5EAFC0019AA52 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2EFBB6B01BF5EAFC0019AA52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EFBB6B11BF5EAFC0019AA52 /* ViewController.h */,
+				2EFBB6B21BF5EAFC0019AA52 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EFBB6B31BF5EAFC0019AA52 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2EFBB6B41BF5EAFC0019AA52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EFBB6B51BF5EAFC0019AA52 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2EFBB6B61BF5EAFC0019AA52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EFBB6861BF5E9F80019AA52 /* LaunchScreen.storyboard */,
+				2EFBB6811BF5E9F80019AA52 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EFBB6BC1BF5EB2C0019AA52 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2EFBB6BD1BF5EB2C0019AA52 /* AppDelegate.h */,
+				2EFBB6BE1BF5EB2C0019AA52 /* AppDelegate.m */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EFBB6801BF5E9F80019AA52 /* ViewController.m in Sources */,
-				2EFBB67D1BF5E9F80019AA52 /* AppDelegate.m in Sources */,
+				2EFBB6B81BF5EAFC0019AA52 /* ViewController.m in Sources */,
 				2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */,
+				2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +380,7 @@
 				2EFBB6821BF5E9F80019AA52 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		2EFBB6861BF5E9F80019AA52 /* LaunchScreen.storyboard */ = {
@@ -322,6 +389,7 @@
 				2EFBB6871BF5E9F80019AA52 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
