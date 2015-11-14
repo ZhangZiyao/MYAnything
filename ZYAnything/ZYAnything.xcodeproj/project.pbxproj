@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */; };
 		2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6791BF5E9F80019AA52 /* main.m */; };
 		2EFBB6831BF5E9F80019AA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6811BF5E9F80019AA52 /* Main.storyboard */; };
 		2EFBB6851BF5E9F80019AA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EF326A41BF79B4500649C2E /* VisitPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitPhotoViewController.h; sourceTree = "<group>"; };
+		2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitPhotoViewController.m; sourceTree = "<group>"; };
 		2EFBB6751BF5E9F80019AA52 /* ZYAnything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAnything.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFBB6791BF5E9F80019AA52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EFBB6821BF5E9F80019AA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF326A31BF79B1100649C2E /* 访问相册 */ = {
+			isa = PBXGroup;
+			children = (
+				2EF326A41BF79B4500649C2E /* VisitPhotoViewController.h */,
+				2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */,
+			);
+			path = "访问相册";
+			sourceTree = "<group>";
+		};
 		2EFBB66C1BF5E9F80019AA52 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 		2EFBB6B01BF5EAFC0019AA52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2EF326A31BF79B1100649C2E /* 访问相册 */,
 				2EFBB6B11BF5EAFC0019AA52 /* ViewController.h */,
 				2EFBB6B21BF5EAFC0019AA52 /* ViewController.m */,
 			);
@@ -337,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EFBB6B81BF5EAFC0019AA52 /* ViewController.m in Sources */,
+				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
 				2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */,
 				2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.m in Sources */,
 			);
@@ -564,6 +578,7 @@
 				2EFBB6A41BF5E9F80019AA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EFBB6A51BF5E9F80019AA52 /* Build configuration list for PBXNativeTarget "ZYAnythingTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +587,7 @@
 				2EFBB6A71BF5E9F80019AA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EFBB6A81BF5E9F80019AA52 /* Build configuration list for PBXNativeTarget "ZYAnythingUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +596,7 @@
 				2EFBB6AA1BF5E9F80019AA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

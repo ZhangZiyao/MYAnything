@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UIDefines.h"
+#import "VisitPhotoViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"Anything";
+    
+    self.view.backgroundColor = BGColor;
+    [self makeUI];
+}
+
+- (void)makeUI{
+    
+    UIButton *visitPhoto = [[UIButton alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH/2.f-50, 100, 100, 30)];
+    [visitPhoto setTitle:@"访问相册" forState:UIControlStateNormal];
+    [visitPhoto setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:visitPhoto];
+    [visitPhoto addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    visitPhoto.tag = 10;
+    
+    
+    
+}
+
+- (void)btnClickAction:(UIButton *)sender{
+    
+    switch (sender.tag) {
+        case 10:
+        {
+            VisitPhotoViewController *visitPhoto = [[VisitPhotoViewController alloc] init];
+            [self.navigationController pushViewController:visitPhoto animated:YES];
+        }
+            break;
+        case 11:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
