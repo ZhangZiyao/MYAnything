@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIDefines.h"
 #import "VisitPhotoViewController.h"
+#import "MapViewController.h"
 
 @interface ViewController ()
 
@@ -33,22 +34,26 @@
     [visitPhoto addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
     visitPhoto.tag = 10;
     
-    
+    UIButton *map = [[UIButton alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH/2.f-100, visitPhoto.frame.origin.y+100+10, 200, 30)];
+    [map setTitle:@"地图/定位相关" forState:UIControlStateNormal];
+    [map setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:map];
+    [map addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    map.tag = 11;
     
 }
 
 - (void)btnClickAction:(UIButton *)sender{
-    
+    UIViewController *vc = nil;
     switch (sender.tag) {
         case 10:
         {
-            VisitPhotoViewController *visitPhoto = [[VisitPhotoViewController alloc] init];
-            [self.navigationController pushViewController:visitPhoto animated:YES];
+            vc = [[VisitPhotoViewController alloc] init];
         }
             break;
         case 11:
         {
-            
+            vc = [[MapViewController alloc] init];
         }
             break;
             
@@ -56,6 +61,7 @@
             break;
     }
     
+    [self.navigationController pushViewController:vc animated:YES];
     
     
 }
