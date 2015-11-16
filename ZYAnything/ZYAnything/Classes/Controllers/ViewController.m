@@ -10,6 +10,9 @@
 #import "UIDefines.h"
 #import "VisitPhotoViewController.h"
 #import "MapViewController.h"
+#import "QRCodeViewController.h"
+#import "MusicPlayerViewController.h"
+#import "VideoPlayerViewController.h"
 
 @interface ViewController ()
 
@@ -41,19 +44,26 @@
     [map addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
     map.tag = 11;
     
-    UIButton *zbar = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(map)+5, MAINSCREEN_WIDTH, 30)];
-    [zbar setTitle:@"二维码" forState:UIControlStateNormal];
-    [zbar setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:zbar];
-    [zbar addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    zbar.tag = 12;
+    UIButton *qrCode = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(map)+5, MAINSCREEN_WIDTH, 30)];
+    [qrCode setTitle:@"二维码" forState:UIControlStateNormal];
+    [qrCode setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:qrCode];
+    [qrCode addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    qrCode.tag = 12;
     
-    UIButton *player = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(zbar)+5, MAINSCREEN_WIDTH, 30)];
-    [player setTitle:@"播放器" forState:UIControlStateNormal];
-    [player setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:player];
-    [player addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    player.tag = 13;
+    UIButton *musicPlayer = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(qrCode)+5, MAINSCREEN_WIDTH, 30)];
+    [musicPlayer setTitle:@"音乐播放器" forState:UIControlStateNormal];
+    [musicPlayer setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:musicPlayer];
+    [musicPlayer addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    musicPlayer.tag = 13;
+    
+    UIButton *videoPlayer = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(musicPlayer)+5, MAINSCREEN_WIDTH, 30)];
+    [videoPlayer setTitle:@"视频播放器" forState:UIControlStateNormal];
+    [videoPlayer setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:videoPlayer];
+    [videoPlayer addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    videoPlayer.tag = 14;
     
 }
 
@@ -70,7 +80,21 @@
             vc = [[MapViewController alloc] init];
         }
             break;
-            
+        case 12:
+        {
+            vc = [[QRCodeViewController alloc] init];
+        }
+            break;
+        case 13:
+        {
+            vc = [[MusicPlayerViewController alloc] init];
+        }
+            break;
+        case 14:
+        {
+            vc = [[VideoPlayerViewController alloc] init];
+        }
+            break;
         default:
             break;
     }

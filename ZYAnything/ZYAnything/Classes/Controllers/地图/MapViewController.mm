@@ -185,7 +185,7 @@
     [self.view addSubview:_mapView];
     [_mapView setScrollEnabled:YES];
     [_mapView setZoomEnabled:YES];
-    _mapView.zoomLevel = 15;
+//    _mapView.zoomLevel = 15;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
