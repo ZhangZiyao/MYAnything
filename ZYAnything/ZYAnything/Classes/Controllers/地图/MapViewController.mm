@@ -113,29 +113,31 @@
     locService = [[BMKLocationService alloc] init];
     
     
-    UIView *sView = [[UIView alloc] initWithFrame:CGRectMake(0, MAINSCREEN_HEIGHT-50, MAINSCREEN_WIDTH, 50)];
+    UIView *sView = [[UIView alloc] initWithFrame:CGRectMake(0, MAINSCREEN_HEIGHT-40, MAINSCREEN_WIDTH, 40)];
     [self.view addSubview:sView];
 //    sView.backgroundColor = GreenBtnColor;
     
-    startBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 40)];
+    CGFloat buttonWidth = MAINSCREEN_WIDTH/4.f;
+    
+    startBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, buttonWidth, 40)];
     [startBtn setTitle:@"定位" forState:UIControlStateNormal];
     [startBtn setBackgroundColor:GreenBtnColor];
     [sView addSubview:startBtn];
     [startBtn addTarget:self action:@selector(startLocation) forControlEvents:UIControlEventTouchUpInside];
     
-    followingBtn = [[UIButton alloc] initWithFrame:CGRectMake(80, 0, 80, 40)];
+    followingBtn = [[UIButton alloc] initWithFrame:CGRectMake(buttonWidth, 0, buttonWidth, 40)];
     [followingBtn setTitle:@"跟随" forState:UIControlStateNormal];
     [followingBtn setBackgroundColor:GreenBtnColor];
     [sView addSubview:followingBtn];
     [followingBtn addTarget:self action:@selector(startFollowing) forControlEvents:UIControlEventTouchUpInside];
     
-    followHeadBtn = [[UIButton alloc] initWithFrame:CGRectMake(160, 0, 80, 40)];
+    followHeadBtn = [[UIButton alloc] initWithFrame:CGRectMake(buttonWidth*2, 0, buttonWidth, 40)];
     [followHeadBtn setTitle:@"罗盘" forState:UIControlStateNormal];
     [followHeadBtn setBackgroundColor:GreenBtnColor];
     [sView addSubview:followHeadBtn];
     [followHeadBtn addTarget:self action:@selector(startFollowHeading) forControlEvents:UIControlEventTouchUpInside];
     
-    stopBtn = [[UIButton alloc] initWithFrame:CGRectMake(240, 0, 80, 40)];
+    stopBtn = [[UIButton alloc] initWithFrame:CGRectMake(buttonWidth*3, 0, buttonWidth, 40)];
     [stopBtn setTitle:@"停止定位" forState:UIControlStateNormal];
     [stopBtn setBackgroundColor:GreenBtnColor];
     [sView addSubview:stopBtn];
@@ -179,7 +181,7 @@
 
 #pragma mark - 初始化地图控件
 - (void)initMapView{
-    _mapView = [[BMKMapView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT-50)];
+    _mapView = [[BMKMapView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT-40)];
     [self.view addSubview:_mapView];
     [_mapView setScrollEnabled:YES];
     [_mapView setZoomEnabled:YES];
@@ -277,6 +279,8 @@
 {
     NSLog(@"location error");
 }
+
+#pragma mark -
 - (NSString*)getMyBundlePath1:(NSString *)filename
 {
     
