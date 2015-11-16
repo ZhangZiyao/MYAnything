@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>
-#import <CoreLocation/CoreLocation.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
 
-@interface MapViewController : UIViewController<BMKMapViewDelegate,BMKLocationServiceDelegate>
+@interface MapViewController : UIViewController<BMKMapViewDelegate,BMKLocationServiceDelegate,BMKRouteSearchDelegate>
 {
     BMKLocationService *locService;
 }

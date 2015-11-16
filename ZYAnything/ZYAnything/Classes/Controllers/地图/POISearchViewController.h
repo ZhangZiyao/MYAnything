@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
 
-@interface POISearchViewController : UIViewController
-
+@interface POISearchViewController : UIViewController<BMKPoiSearchDelegate>
+{
+    BMKPoiSearch *poiSearch;
+}
 @end
