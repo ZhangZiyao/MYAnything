@@ -21,5 +21,18 @@
 #define MAINSCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define NAV_HEIGHT 64.f
 
+#define X(v)               (v).frame.origin.x
+#define Y(v)               (v).frame.origin.y
+#define WIDTH(v)           (v).frame.size.width
+#define HEIGHT(v)          (v).frame.size.height
+
+#define MinX(v)            CGRectGetMinX((v).frame) // 获得控件屏幕的x坐标
+#define MinY(v)            CGRectGetMinY((v).frame) // 获得控件屏幕的Y坐标
+
+#define MidX(v)            CGRectGetMidX((v).frame) //横坐标加上到控件中点坐标
+#define MidY(v)            CGRectGetMidY((v).frame) //纵坐标加上到控件中点坐标
+
+#define MaxX(v)            CGRectGetMaxX((v).frame) //横坐标加上控件的宽度
+#define MaxY(v)            CGRectGetMaxY((v).frame) //纵坐标加上控件的高度
 
 #endif /* UIDefines_h */

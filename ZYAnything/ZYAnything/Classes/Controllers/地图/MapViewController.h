@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController<BMKMapViewDelegate,BMKLocationServiceDelegate>
+{
+    BMKLocationService *locService;
+}
+
+@property (nonatomic,strong) BMKMapView *mapView;
 
 @end
