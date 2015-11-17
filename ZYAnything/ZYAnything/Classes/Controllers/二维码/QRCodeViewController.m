@@ -94,6 +94,9 @@
 
 #pragma mark - 扫描二维码
 - (void)startStopReading:(UIButton *)sender{
+    
+    [_imageView removeFromSuperview];
+    
     if (!_isReading) {
         if ([self startReading]) {
             [_startScanBtn setTitle:@"停止扫描" forState:UIControlStateNormal];

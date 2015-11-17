@@ -26,6 +26,11 @@
 		2E87E6DE1BFB0790005BEBD2 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D31BFB0790005BEBD2 /* qrspec.c */; };
 		2E87E6DF1BFB0790005BEBD2 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D51BFB0790005BEBD2 /* rscode.c */; };
 		2E87E6E01BFB0790005BEBD2 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D71BFB0790005BEBD2 /* split.c */; };
+		2E87E6E31BFB104B005BEBD2 /* PilotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6E21BFB104B005BEBD2 /* PilotView.m */; };
+		2E87E6E51BFB149E005BEBD2 /* lijitiyan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E41BFB149E005BEBD2 /* lijitiyan@2x.png */; };
+		2E87E6E91BFB14D0005BEBD2 /* qd01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E61BFB14D0005BEBD2 /* qd01@2x.png */; };
+		2E87E6EA1BFB14D0005BEBD2 /* qd02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E71BFB14D0005BEBD2 /* qd02@2x.png */; };
+		2E87E6EB1BFB14D0005BEBD2 /* qd03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */; };
 		2ED81D311BF8C2C300127640 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D301BF8C2C300127640 /* CoreLocation.framework */; };
 		2ED81D331BF8C2CC00127640 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D321BF8C2CC00127640 /* QuartzCore.framework */; };
 		2ED81D351BF8C2D600127640 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D341BF8C2D600127640 /* OpenGLES.framework */; };
@@ -96,6 +101,12 @@
 		2E87E6D61BFB0790005BEBD2 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
 		2E87E6D71BFB0790005BEBD2 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
 		2E87E6D81BFB0790005BEBD2 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		2E87E6E11BFB104B005BEBD2 /* PilotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PilotView.h; sourceTree = "<group>"; };
+		2E87E6E21BFB104B005BEBD2 /* PilotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PilotView.m; sourceTree = "<group>"; };
+		2E87E6E41BFB149E005BEBD2 /* lijitiyan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lijitiyan@2x.png"; sourceTree = "<group>"; };
+		2E87E6E61BFB14D0005BEBD2 /* qd01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd01@2x.png"; sourceTree = "<group>"; };
+		2E87E6E71BFB14D0005BEBD2 /* qd02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd02@2x.png"; sourceTree = "<group>"; };
+		2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd03@2x.png"; sourceTree = "<group>"; };
 		2ED81D301BF8C2C300127640 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2ED81D321BF8C2CC00127640 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ED81D341BF8C2D600127640 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -358,6 +369,10 @@
 		2EFBB6B31BF5EAFC0019AA52 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E87E6E61BFB14D0005BEBD2 /* qd01@2x.png */,
+				2E87E6E71BFB14D0005BEBD2 /* qd02@2x.png */,
+				2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */,
+				2E87E6E41BFB149E005BEBD2 /* lijitiyan@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -380,6 +395,8 @@
 		2EFBB6B61BF5EAFC0019AA52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E87E6E11BFB104B005BEBD2 /* PilotView.h */,
+				2E87E6E21BFB104B005BEBD2 /* PilotView.m */,
 				2EFBB6861BF5E9F80019AA52 /* LaunchScreen.storyboard */,
 				2EFBB6811BF5E9F80019AA52 /* Main.storyboard */,
 			);
@@ -499,8 +516,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E87E6EB1BFB14D0005BEBD2 /* qd03@2x.png in Resources */,
+				2E87E6E91BFB14D0005BEBD2 /* qd01@2x.png in Resources */,
 				2EFBB6881BF5E9F80019AA52 /* LaunchScreen.storyboard in Resources */,
+				2E87E6EA1BFB14D0005BEBD2 /* qd02@2x.png in Resources */,
 				2E87E6B21BF97F8D005BEBD2 /* mapapi.bundle in Resources */,
+				2E87E6E51BFB149E005BEBD2 /* lijitiyan@2x.png in Resources */,
 				2EFBB6851BF5E9F80019AA52 /* Assets.xcassets in Resources */,
 				2EFBB6831BF5E9F80019AA52 /* Main.storyboard in Resources */,
 			);
@@ -532,6 +553,7 @@
 				2E87E6D91BFB0790005BEBD2 /* bitstream.c in Sources */,
 				2E87E6B51BF993A3005BEBD2 /* POISearchViewController.mm in Sources */,
 				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
+				2E87E6E31BFB104B005BEBD2 /* PilotView.m in Sources */,
 				2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */,
 				2E87E6C21BF9CD96005BEBD2 /* MusicPlayerViewController.m in Sources */,
 				2E87E6DB1BFB0790005BEBD2 /* QRCodeGenerator.m in Sources */,

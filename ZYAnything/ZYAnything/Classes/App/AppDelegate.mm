@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import "PilotView.h"
 
 BMKMapManager *_mapManager;
 @interface AppDelegate ()
@@ -28,11 +29,27 @@ BMKMapManager *_mapManager;
         NSLog(@"manager start failed!");
     }
     
-    
     ViewController *mainVC = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    //增加标识，判断应用是否是第一次启动
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:@"first"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"first"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"first"]) {
+        PilotView *pilotView = [[PilotView alloc] init];
+        [self.window addSubview:pilotView];
+    }else{
+        
+    }
+    
+    
+    
+    
     return YES;
 }
 
