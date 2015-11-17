@@ -414,6 +414,7 @@
 				TargetAttributes = {
 					2EFBB6741BF5E9F80019AA52 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = RLDLJRDN4W;
 					};
 					2EFBB68D1BF5E9F80019AA52 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -627,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZYAnything/BaiduMap",
@@ -643,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZYAnything/BaiduMap",
