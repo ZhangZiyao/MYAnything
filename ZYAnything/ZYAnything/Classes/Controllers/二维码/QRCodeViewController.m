@@ -18,6 +18,7 @@
 */
 #import "QRCodeViewController.h"
 #import "UIDefines.h"
+#import "QRCodeGenerator.h"
 
 @interface QRCodeViewController ()<UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate>
 
@@ -25,6 +26,28 @@
 @end
 
 @implementation QRCodeViewController
+#pragma mark - 把输入的字符串转换为二维码
+/*
+ 导入libqrencode文件
+ 引入头文件#import "QRCodeGenerator.h"即可使用
+ */
+- (void)changeStringToCode{
+    [_codeText resignFirstResponder];
+    NSString *str = _codeText.text;
+    NSLog(@"需要转成二维码的字符串：%@",str);
+    
+    
+    [self.view addSubview:_imageView];
+    _imageView.image = [QRCodeGenerator qrImageForString:str imageSize:_imageView.bounds.size.width];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissQRCode)];
+    [_imageView addGestureRecognizer:tap];
+    _imageView.userInteractionEnabled = YES;
+    
+}
+
+- (void)dismissQRCode{
+    [_imageView removeFromSuperview];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,6 +67,8 @@
     [_changeBtn setTitle:@"生成" forState:UIControlStateNormal];
     [_changeBtn setBackgroundColor:BlueBtnColor];
     [_changeBtn addTarget:self action:@selector(changeStringToCode) forControlEvents:UIControlEventTouchUpInside];
+    //二维码图片
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH/2.f-120, NAV_HEIGHT+100, 240, 240)];
     
     _viewPreview = [[UIView alloc] initWithFrame:CGRectMake(8, MaxY(_codeText)+8, MAINSCREEN_WIDTH-16, MAINSCREEN_HEIGHT-NAV_HEIGHT-200)];
     [self.view addSubview:_viewPreview];
@@ -66,15 +91,7 @@
     
     
 }
-#pragma mark - 把输入的字符串转换为二维码
-- (void)changeStringToCode{
-    [_codeText resignFirstResponder];
-    NSString *str = _codeText.text;
-    NSLog(@"需要转成二维码的字符串：%@",str);
-    
-    
-    
-}
+
 #pragma mark - 扫描二维码
 - (void)startStopReading:(UIButton *)sender{
     if (!_isReading) {

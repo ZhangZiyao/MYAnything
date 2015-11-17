@@ -13,6 +13,8 @@
 
 @property (nonatomic,strong) UITextField *codeText;
 @property (nonatomic,strong) UIButton *changeBtn;
+@property (nonatomic,strong) UIImageView *imageView;
+
 @property (nonatomic,strong) UIView *viewPreview;
 @property (nonatomic,strong) UIButton *startScanBtn;
 @property (nonatomic,strong) UILabel *lblStatus;

@@ -18,6 +18,14 @@
 		2E87E6C21BF9CD96005BEBD2 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6C11BF9CD96005BEBD2 /* MusicPlayerViewController.m */; };
 		2E87E6C51BF9CDA6005BEBD2 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6C41BF9CDA6005BEBD2 /* VideoPlayerViewController.m */; };
 		2E87E6C71BF9CF3A005BEBD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6C61BF9CF3A005BEBD2 /* AVFoundation.framework */; };
+		2E87E6D91BFB0790005BEBD2 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6C91BFB0790005BEBD2 /* bitstream.c */; };
+		2E87E6DA1BFB0790005BEBD2 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6CB1BFB0790005BEBD2 /* mask.c */; };
+		2E87E6DB1BFB0790005BEBD2 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6CE1BFB0790005BEBD2 /* QRCodeGenerator.m */; };
+		2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6CF1BFB0790005BEBD2 /* qrencode.c */; };
+		2E87E6DD1BFB0790005BEBD2 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D11BFB0790005BEBD2 /* qrinput.c */; };
+		2E87E6DE1BFB0790005BEBD2 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D31BFB0790005BEBD2 /* qrspec.c */; };
+		2E87E6DF1BFB0790005BEBD2 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D51BFB0790005BEBD2 /* rscode.c */; };
+		2E87E6E01BFB0790005BEBD2 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6D71BFB0790005BEBD2 /* split.c */; };
 		2ED81D311BF8C2C300127640 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D301BF8C2C300127640 /* CoreLocation.framework */; };
 		2ED81D331BF8C2CC00127640 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D321BF8C2CC00127640 /* QuartzCore.framework */; };
 		2ED81D351BF8C2D600127640 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D341BF8C2D600127640 /* OpenGLES.framework */; };
@@ -72,6 +80,22 @@
 		2E87E6C31BF9CDA6005BEBD2 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
 		2E87E6C41BF9CDA6005BEBD2 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		2E87E6C61BF9CF3A005BEBD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2E87E6C91BFB0790005BEBD2 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		2E87E6CA1BFB0790005BEBD2 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		2E87E6CB1BFB0790005BEBD2 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		2E87E6CC1BFB0790005BEBD2 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		2E87E6CD1BFB0790005BEBD2 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		2E87E6CE1BFB0790005BEBD2 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		2E87E6CF1BFB0790005BEBD2 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		2E87E6D01BFB0790005BEBD2 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		2E87E6D11BFB0790005BEBD2 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		2E87E6D21BFB0790005BEBD2 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		2E87E6D31BFB0790005BEBD2 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		2E87E6D41BFB0790005BEBD2 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		2E87E6D51BFB0790005BEBD2 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		2E87E6D61BFB0790005BEBD2 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		2E87E6D71BFB0790005BEBD2 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		2E87E6D81BFB0790005BEBD2 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		2ED81D301BF8C2C300127640 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2ED81D321BF8C2CC00127640 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ED81D341BF8C2D600127640 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -169,6 +193,29 @@
 				2E87E6C11BF9CD96005BEBD2 /* MusicPlayerViewController.m */,
 			);
 			path = "音乐";
+			sourceTree = "<group>";
+		};
+		2E87E6C81BFB0790005BEBD2 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				2E87E6C91BFB0790005BEBD2 /* bitstream.c */,
+				2E87E6CA1BFB0790005BEBD2 /* bitstream.h */,
+				2E87E6CB1BFB0790005BEBD2 /* mask.c */,
+				2E87E6CC1BFB0790005BEBD2 /* mask.h */,
+				2E87E6CD1BFB0790005BEBD2 /* QRCodeGenerator.h */,
+				2E87E6CE1BFB0790005BEBD2 /* QRCodeGenerator.m */,
+				2E87E6CF1BFB0790005BEBD2 /* qrencode.c */,
+				2E87E6D01BFB0790005BEBD2 /* qrencode.h */,
+				2E87E6D11BFB0790005BEBD2 /* qrinput.c */,
+				2E87E6D21BFB0790005BEBD2 /* qrinput.h */,
+				2E87E6D31BFB0790005BEBD2 /* qrspec.c */,
+				2E87E6D41BFB0790005BEBD2 /* qrspec.h */,
+				2E87E6D51BFB0790005BEBD2 /* rscode.c */,
+				2E87E6D61BFB0790005BEBD2 /* rscode.h */,
+				2E87E6D71BFB0790005BEBD2 /* split.c */,
+				2E87E6D81BFB0790005BEBD2 /* split.h */,
+			);
+			path = libqrencode;
 			sourceTree = "<group>";
 		};
 		2EF326A31BF79B1100649C2E /* 访问相册 */ = {
@@ -325,6 +372,7 @@
 		2EFBB6B51BF5EAFC0019AA52 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				2E87E6C81BFB0790005BEBD2 /* libqrencode */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -480,14 +528,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EFBB6B81BF5EAFC0019AA52 /* ViewController.m in Sources */,
+				2E87E6DD1BFB0790005BEBD2 /* qrinput.c in Sources */,
+				2E87E6D91BFB0790005BEBD2 /* bitstream.c in Sources */,
 				2E87E6B51BF993A3005BEBD2 /* POISearchViewController.mm in Sources */,
 				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
+				2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */,
 				2E87E6C21BF9CD96005BEBD2 /* MusicPlayerViewController.m in Sources */,
+				2E87E6DB1BFB0790005BEBD2 /* QRCodeGenerator.m in Sources */,
 				2EF326AA1BF806C800649C2E /* MapViewController.mm in Sources */,
+				2E87E6DF1BFB0790005BEBD2 /* rscode.c in Sources */,
 				2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */,
+				2E87E6E01BFB0790005BEBD2 /* split.c in Sources */,
 				2E87E6C51BF9CDA6005BEBD2 /* VideoPlayerViewController.m in Sources */,
 				2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.mm in Sources */,
 				2E87E6BF1BF9CD6B005BEBD2 /* QRCodeViewController.m in Sources */,
+				2E87E6DE1BFB0790005BEBD2 /* qrspec.c in Sources */,
+				2E87E6DA1BFB0790005BEBD2 /* mask.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
