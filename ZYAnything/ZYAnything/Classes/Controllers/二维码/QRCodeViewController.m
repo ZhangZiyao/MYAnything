@@ -19,6 +19,7 @@
 #import "QRCodeViewController.h"
 #import "UIDefines.h"
 #import "QRCodeGenerator.h"
+#import "ZBarQRCodeViewController.h"
 
 @interface QRCodeViewController ()<UITextFieldDelegate,AVCaptureMetadataOutputObjectsDelegate>
 
@@ -89,6 +90,18 @@
     [_startScanBtn setTitle:@"开始扫描" forState:UIControlStateNormal];
     [_startScanBtn addTarget:self action:@selector(startStopReading:) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton *zbarBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-50, MAINSCREEN_WIDTH-16, 40)];
+    [self.view addSubview:zbarBtn];
+    [zbarBtn setBackgroundColor:BlueBtnColor];
+    [zbarBtn setTitle:@"用ZBar做二维码扫描" forState:UIControlStateNormal];
+    [zbarBtn addTarget:self action:@selector(turnToZBarVC) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)turnToZBarVC{
+    
+    ZBarQRCodeViewController *zbarVC = [[ZBarQRCodeViewController alloc] init];
+    [self.navigationController pushViewController:zbarVC animated:YES];
     
 }
 

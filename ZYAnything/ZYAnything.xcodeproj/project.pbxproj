@@ -31,6 +31,7 @@
 		2E87E6E91BFB14D0005BEBD2 /* qd01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E61BFB14D0005BEBD2 /* qd01@2x.png */; };
 		2E87E6EA1BFB14D0005BEBD2 /* qd02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E71BFB14D0005BEBD2 /* qd02@2x.png */; };
 		2E87E6EB1BFB14D0005BEBD2 /* qd03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */; };
+		2E87E6EE1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */; };
 		2ED81D311BF8C2C300127640 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D301BF8C2C300127640 /* CoreLocation.framework */; };
 		2ED81D331BF8C2CC00127640 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D321BF8C2CC00127640 /* QuartzCore.framework */; };
 		2ED81D351BF8C2D600127640 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D341BF8C2D600127640 /* OpenGLES.framework */; };
@@ -107,6 +108,8 @@
 		2E87E6E61BFB14D0005BEBD2 /* qd01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd01@2x.png"; sourceTree = "<group>"; };
 		2E87E6E71BFB14D0005BEBD2 /* qd02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd02@2x.png"; sourceTree = "<group>"; };
 		2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd03@2x.png"; sourceTree = "<group>"; };
+		2E87E6EC1BFB19F3005BEBD2 /* ZBarQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarQRCodeViewController.h; sourceTree = "<group>"; };
+		2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarQRCodeViewController.m; sourceTree = "<group>"; };
 		2ED81D301BF8C2C300127640 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2ED81D321BF8C2CC00127640 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ED81D341BF8C2D600127640 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -184,6 +187,8 @@
 			children = (
 				2E87E6BD1BF9CD6B005BEBD2 /* QRCodeViewController.h */,
 				2E87E6BE1BF9CD6B005BEBD2 /* QRCodeViewController.m */,
+				2E87E6EC1BFB19F3005BEBD2 /* ZBarQRCodeViewController.h */,
+				2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */,
 			);
 			path = "二维码";
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				2E87E6DD1BFB0790005BEBD2 /* qrinput.c in Sources */,
 				2E87E6D91BFB0790005BEBD2 /* bitstream.c in Sources */,
 				2E87E6B51BF993A3005BEBD2 /* POISearchViewController.mm in Sources */,
+				2E87E6EE1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m in Sources */,
 				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
 				2E87E6E31BFB104B005BEBD2 /* PilotView.m in Sources */,
 				2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */,
