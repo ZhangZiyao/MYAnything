@@ -22,6 +22,7 @@
 #import "ZBarQRCodeViewController.h"
 #import "UIDefines.h"
 #import "ZBarSDK.h"
+#import "ZXingQRCodeViewController.h"
 
 @interface ZBarQRCodeViewController ()
 {
@@ -37,7 +38,6 @@
     self.title = @"ZBar二维码扫描";
     self.view.backgroundColor = BGColor;
     
-    
     imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, NAV_HEIGHT+20, MAINSCREEN_WIDTH-40, MAINSCREEN_WIDTH-40)];
     [self.view addSubview:imageView];
     imageView.backgroundColor = [UIColor cyanColor];
@@ -52,7 +52,15 @@
     [btn setBackgroundColor:BlueBtnColor];
     [btn addTarget:self action:@selector(startScan:) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton *zxingBtn = [[UIButton alloc] initWithFrame:CGRectMake(8, MaxY(btn)+20, MAINSCREEN_WIDTH-16, 40)];
+    [self.view addSubview:zxingBtn];
+    [zxingBtn setTitle:@"用ZXing做二维码扫描" forState:UIControlStateNormal];
+    [zxingBtn setBackgroundColor:BlueBtnColor];
+    [zxingBtn addTarget:self action:@selector(turnToZXing) forControlEvents:UIControlEventTouchUpInside];
     
+}
+
+- (void)turnToZXing{
     
 }
 
@@ -68,6 +76,8 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    
+    //第一种   --------
     // ADD: get the decode results
 //    id<NSFastEnumeration> results =
 //    [info objectForKey: ZBarReaderControllerResults];
@@ -87,6 +97,7 @@
 //    [self dismissViewControllerAnimated:YES completion:nil];
     
     
+    //第二种 ---------
     id<NSFastEnumeration> results =
     [info objectForKey: ZBarReaderControllerResults];
     ZBarSymbol *symbol = nil;

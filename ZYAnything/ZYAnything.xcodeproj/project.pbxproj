@@ -16,6 +16,7 @@
 		2E4AAE301BFDD89800287E8B /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2B1BFDD89800287E8B /* zbar-helpicons.png */; };
 		2E4AAE311BFDD89800287E8B /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2C1BFDD89800287E8B /* zbar-samples.png */; };
 		2E4AAE331BFDDA0000287E8B /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AAE321BFDDA0000287E8B /* libzbar.a */; };
+		2E4AAE361BFDDB9B00287E8B /* ZXingQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AAE351BFDDB9B00287E8B /* ZXingQRCodeViewController.m */; };
 		2E87E6AE1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AB1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework */; };
 		2E87E6AF1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AC1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework */; };
 		2E87E6B01BF97F78005BEBD2 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AD1BF97F78005BEBD2 /* BaiduMapAPI_Map.framework */; };
@@ -110,6 +111,8 @@
 		2E4AAE2B1BFDD89800287E8B /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		2E4AAE2C1BFDD89800287E8B /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
 		2E4AAE321BFDDA0000287E8B /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		2E4AAE341BFDDB9B00287E8B /* ZXingQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXingQRCodeViewController.h; sourceTree = "<group>"; };
+		2E4AAE351BFDDB9B00287E8B /* ZXingQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXingQRCodeViewController.m; sourceTree = "<group>"; };
 		2E87E6AB1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		2E87E6AC1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
 		2E87E6AD1BF97F78005BEBD2 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				2E87E6BE1BF9CD6B005BEBD2 /* QRCodeViewController.m */,
 				2E87E6EC1BFB19F3005BEBD2 /* ZBarQRCodeViewController.h */,
 				2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */,
+				2E4AAE341BFDDB9B00287E8B /* ZXingQRCodeViewController.h */,
+				2E4AAE351BFDDB9B00287E8B /* ZXingQRCodeViewController.m */,
 			);
 			path = "二维码";
 			sourceTree = "<group>";
@@ -695,6 +700,7 @@
 				2E87E6C51BF9CDA6005BEBD2 /* VideoPlayerViewController.m in Sources */,
 				2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.mm in Sources */,
 				2E4AADC21BFDC79800287E8B /* Base64.m in Sources */,
+				2E4AAE361BFDDB9B00287E8B /* ZXingQRCodeViewController.m in Sources */,
 				2E87E6BF1BF9CD6B005BEBD2 /* QRCodeViewController.m in Sources */,
 				2E87E6DE1BFB0790005BEBD2 /* qrspec.c in Sources */,
 				2E87E6DA1BFB0790005BEBD2 /* mask.c in Sources */,
