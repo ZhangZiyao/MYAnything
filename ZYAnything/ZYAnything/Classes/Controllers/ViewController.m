@@ -13,6 +13,7 @@
 #import "QRCodeViewController.h"
 #import "MusicPlayerViewController.h"
 #import "VideoPlayerViewController.h"
+#import "Base64.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,22 @@
     
     self.view.backgroundColor = BGColor;
     [self makeUI];
+    
+    NSString *str = [@"lalala" base64EncodedString];
+    
+    NSData *dataa = [NSData dataWithBase64EncodedString:str];
+    
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"111",@"222",@"222",@"sdsd",@"wwer",@"werewr",dataa,@"qqqqq", nil];
+    NSLog(@"%@%@",str,dic);
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 - (void)makeUI{

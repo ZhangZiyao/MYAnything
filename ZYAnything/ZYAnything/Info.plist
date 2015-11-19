@@ -43,5 +43,19 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>UIApplicationShortcutItemType</key>
+				<string>one</string>
+				<key>UIApplicationShortcutItemTitle</key>
+				<string>第一个按钮</string>
+				<key>UIApplicationShortcutItemIconFile</key>
+				<string>lijitiyan</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
