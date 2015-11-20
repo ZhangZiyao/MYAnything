@@ -22,7 +22,6 @@
 #import "ZBarQRCodeViewController.h"
 #import "UIDefines.h"
 #import "ZBarSDK.h"
-#import "ZXingQRCodeViewController.h"
 
 @interface ZBarQRCodeViewController ()
 {
@@ -51,16 +50,6 @@
     [btn setTitle:@"开始扫描" forState:UIControlStateNormal];
     [btn setBackgroundColor:BlueBtnColor];
     [btn addTarget:self action:@selector(startScan:) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIButton *zxingBtn = [[UIButton alloc] initWithFrame:CGRectMake(8, MaxY(btn)+20, MAINSCREEN_WIDTH-16, 40)];
-    [self.view addSubview:zxingBtn];
-    [zxingBtn setTitle:@"用ZXing做二维码扫描" forState:UIControlStateNormal];
-    [zxingBtn setBackgroundColor:BlueBtnColor];
-    [zxingBtn addTarget:self action:@selector(turnToZXing) forControlEvents:UIControlEventTouchUpInside];
-    
-}
-
-- (void)turnToZXing{
     
 }
 
