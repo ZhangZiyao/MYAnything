@@ -8,6 +8,7 @@
 
 #import "ZXingQRCodeViewController.h"
 #import "UIDefines.h"
+#import ""
 
 @interface ZXingQRCodeViewController ()
 
@@ -17,8 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"ZBar二维码扫描";
+    self.title = @"ZXing二维码扫描";
     self.view.backgroundColor = BGColor;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
