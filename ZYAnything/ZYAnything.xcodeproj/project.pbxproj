@@ -10,16 +10,12 @@
 		2E4AADC21BFDC79800287E8B /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AADC11BFDC79800287E8B /* Base64.m */; };
 		2E4AADE71BFDD4D300287E8B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */; };
 		2E4AADE91BFDD4DF00287E8B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AADE81BFDD4DF00287E8B /* CoreVideo.framework */; };
-		2E4AADEB1BFDD4EE00287E8B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AADEA1BFDD4EE00287E8B /* libiconv.tbd */; };
 		2E4AAE2E1BFDD89800287E8B /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE291BFDD89800287E8B /* zbar-back.png */; };
 		2E4AAE2F1BFDD89800287E8B /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2A1BFDD89800287E8B /* zbar-help.html */; };
 		2E4AAE301BFDD89800287E8B /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2B1BFDD89800287E8B /* zbar-helpicons.png */; };
 		2E4AAE311BFDD89800287E8B /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2C1BFDD89800287E8B /* zbar-samples.png */; };
 		2E4AAE331BFDDA0000287E8B /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AAE321BFDDA0000287E8B /* libzbar.a */; };
 		2E4AAE3A1BFDDE3200287E8B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE391BFDDE3200287E8B /* Podfile */; };
-		2E4AAE3C1BFEBE3C00287E8B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AAE3B1BFEBE3C00287E8B /* AudioToolbox.framework */; };
-		2E4AAE3E1BFEBE5300287E8B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AAE3D1BFEBE5300287E8B /* AddressBook.framework */; };
-		2E4AAE401BFEBE5A00287E8B /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AAE3F1BFEBE5A00287E8B /* AddressBookUI.framework */; };
 		2E87E6AE1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AB1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework */; };
 		2E87E6AF1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AC1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework */; };
 		2E87E6B01BF97F78005BEBD2 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AD1BF97F78005BEBD2 /* BaiduMapAPI_Map.framework */; };
@@ -45,6 +41,7 @@
 		2E87E6EA1BFB14D0005BEBD2 /* qd02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E71BFB14D0005BEBD2 /* qd02@2x.png */; };
 		2E87E6EB1BFB14D0005BEBD2 /* qd03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */; };
 		2E87E6EE1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */; };
+		2EBC3D6B1C03138000A44840 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBC3D6A1C03138000A44840 /* libiconv.tbd */; };
 		2ED81D311BF8C2C300127640 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D301BF8C2C300127640 /* CoreLocation.framework */; };
 		2ED81D331BF8C2CC00127640 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D321BF8C2CC00127640 /* QuartzCore.framework */; };
 		2ED81D351BF8C2D600127640 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D341BF8C2D600127640 /* OpenGLES.framework */; };
@@ -56,6 +53,8 @@
 		2ED81D411BF8C32500127640 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D401BF8C32500127640 /* libstdc++.6.0.9.tbd */; };
 		2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */; };
 		2EF326AA1BF806C800649C2E /* MapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EF326A91BF806C800649C2E /* MapViewController.mm */; };
+		2EF3E1CE1C095C1E00902B30 /* ZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3E1CD1C095C1E00902B30 /* ZYNavigationController.m */; };
+		2EF3E1D11C095C3900902B30 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3E1D01C095C3900902B30 /* UIViewController+Ext.m */; };
 		2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6791BF5E9F80019AA52 /* main.m */; };
 		2EFBB6831BF5E9F80019AA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6811BF5E9F80019AA52 /* Main.storyboard */; };
 		2EFBB6851BF5E9F80019AA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */; };
@@ -89,7 +88,6 @@
 		2E4AADC11BFDC79800287E8B /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		2E4AADE81BFDD4DF00287E8B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		2E4AADEA1BFDD4EE00287E8B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		2E4AAE131BFDD89800287E8B /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
 		2E4AAE141BFDD89800287E8B /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
 		2E4AAE151BFDD89800287E8B /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
@@ -158,6 +156,7 @@
 		2E87E6E81BFB14D0005BEBD2 /* qd03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qd03@2x.png"; sourceTree = "<group>"; };
 		2E87E6EC1BFB19F3005BEBD2 /* ZBarQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarQRCodeViewController.h; sourceTree = "<group>"; };
 		2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarQRCodeViewController.m; sourceTree = "<group>"; };
+		2EBC3D6A1C03138000A44840 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		2ED81D301BF8C2C300127640 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2ED81D321BF8C2CC00127640 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ED81D341BF8C2D600127640 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -171,6 +170,10 @@
 		2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitPhotoViewController.m; sourceTree = "<group>"; };
 		2EF326A81BF806C800649C2E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2EF326A91BF806C800649C2E /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapViewController.mm; sourceTree = "<group>"; };
+		2EF3E1CC1C095C1E00902B30 /* ZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNavigationController.h; sourceTree = "<group>"; };
+		2EF3E1CD1C095C1E00902B30 /* ZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNavigationController.m; sourceTree = "<group>"; };
+		2EF3E1CF1C095C3900902B30 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
+		2EF3E1D01C095C3900902B30 /* UIViewController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
 		2EFBB6751BF5E9F80019AA52 /* ZYAnything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAnything.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFBB6791BF5E9F80019AA52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EFBB6821BF5E9F80019AA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -198,10 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4AAE401BFEBE5A00287E8B /* AddressBookUI.framework in Frameworks */,
-				2E4AAE3E1BFEBE5300287E8B /* AddressBook.framework in Frameworks */,
-				2E4AAE3C1BFEBE3C00287E8B /* AudioToolbox.framework in Frameworks */,
-				2E4AADEB1BFDD4EE00287E8B /* libiconv.tbd in Frameworks */,
+				2EBC3D6B1C03138000A44840 /* libiconv.tbd in Frameworks */,
 				2E4AADE91BFDD4DF00287E8B /* CoreVideo.framework in Frameworks */,
 				2E4AADE71BFDD4D300287E8B /* CoreMedia.framework in Frameworks */,
 				2E87E6C71BF9CF3A005BEBD2 /* AVFoundation.framework in Frameworks */,
@@ -244,6 +244,7 @@
 		0EEBB886D3DE66FD3F40613F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EBC3D6A1C03138000A44840 /* libiconv.tbd */,
 				2E4AAE3F1BFEBE5A00287E8B /* AddressBookUI.framework */,
 				2E4AAE3D1BFEBE5300287E8B /* AddressBook.framework */,
 				2E4AAE3B1BFEBE3C00287E8B /* AudioToolbox.framework */,
@@ -410,11 +411,21 @@
 			path = BaiduMap;
 			sourceTree = "<group>";
 		};
+		2EF3E1CB1C095BE800902B30 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3E1CC1C095C1E00902B30 /* ZYNavigationController.h */,
+				2EF3E1CD1C095C1E00902B30 /* ZYNavigationController.m */,
+				2EF3E1CF1C095C3900902B30 /* UIViewController+Ext.h */,
+				2EF3E1D01C095C3900902B30 /* UIViewController+Ext.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		2EFBB66C1BF5E9F80019AA52 = {
 			isa = PBXGroup;
 			children = (
 				2E4AAE391BFDDE3200287E8B /* Podfile */,
-				2E4AADEA1BFDD4EE00287E8B /* libiconv.tbd */,
 				2E4AADE81BFDD4DF00287E8B /* CoreVideo.framework */,
 				2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */,
 				2E87E6C61BF9CF3A005BEBD2 /* AVFoundation.framework */,
@@ -487,6 +498,7 @@
 		2EFBB6AB1BF5EAFC0019AA52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2EF3E1CB1C095BE800902B30 /* Navigation */,
 				2EFBB6BC1BF5EB2C0019AA52 /* App */,
 				2EFBB6AF1BF5EAFC0019AA52 /* Category */,
 				2EFBB6B01BF5EAFC0019AA52 /* Controllers */,
@@ -777,9 +789,11 @@
 				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
 				2E87E6E31BFB104B005BEBD2 /* PilotView.m in Sources */,
 				2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */,
+				2EF3E1D11C095C3900902B30 /* UIViewController+Ext.m in Sources */,
 				2E87E6C21BF9CD96005BEBD2 /* MusicPlayerViewController.m in Sources */,
 				2E87E6DB1BFB0790005BEBD2 /* QRCodeGenerator.m in Sources */,
 				2EF326AA1BF806C800649C2E /* MapViewController.mm in Sources */,
+				2EF3E1CE1C095C1E00902B30 /* ZYNavigationController.m in Sources */,
 				2E87E6DF1BFB0790005BEBD2 /* rscode.c in Sources */,
 				2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */,
 				2E87E6E01BFB0790005BEBD2 /* split.c in Sources */,
