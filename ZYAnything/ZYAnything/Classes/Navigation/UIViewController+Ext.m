@@ -28,7 +28,7 @@
     [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
 //    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:BlueBtnColor}];
     [self.navigationController.navigationBar setTintColor:NavColor];
     [self.navigationController.navigationBar setTranslucent:NO];
 }
@@ -37,7 +37,7 @@
     UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
     [tempLabel setBackgroundColor:[UIColor clearColor]];
     [tempLabel setTextAlignment:NSTextAlignmentCenter];
-    [tempLabel setTextColor:[UIColor whiteColor]];
+    [tempLabel setTextColor:BlueBtnColor];
     [tempLabel setFont:[UIFont systemFontOfSize:20.0f]];
     [tempLabel setText:title];
     self.navigationItem.titleView = tempLabel;

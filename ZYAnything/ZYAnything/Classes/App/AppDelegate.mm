@@ -137,3 +137,108 @@ BMKMapManager *_mapManager;
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
 @end
+
+
+/*
+ - (void)application:(UIApplication *)app didReceiveRemoteNotification:(NSDictionary *)userInfo
+ {
+ //取未读count
+ [self refreshAppCount];
+ #ifdef DEBUG
+ NSLog(@"received aps while running, userInfo=%@", userInfo);
+ #endif
+ NSLog(@"received aps while running, userInfo=%@", userInfo);
+ 
+ if (userInfo == nil) {
+ return;
+ }
+ 
+ 
+ //有推送， 在becomeActivity中不检查更新
+ _isAwakenFromeMessagePush = YES;
+ 
+ NSString *module = [userInfo objectForKey:@"module"];
+ NSString *strId = [userInfo objectForKey:@"id"];
+ self.apsReleationId = strId && strId.length > 0 ? strId : @"0";
+ NSDictionary *aps = [userInfo objectForKey:@"aps"];
+ UIApplicationState currentState = [UIApplication sharedApplication].applicationState;
+ 
+ 
+ if (currentState == UIApplicationStateActive) {
+ [self playAlertSound];
+ UIAlertView *alert;
+ //active
+ if ([module isEqualToString:MODULE_CASE]) {
+ alert = [[UIAlertView alloc] initWithTitle:@"您的咨询有新回复" message:[NSString stringWithFormat:@"%@ 是否要跳转到您的咨询列表?", [aps objectForKey:@"alert"]] delegate:self cancelButtonTitle:@"一会儿再说" otherButtonTitles:@"转到我的咨询", nil];
+ [alert setTag:TAG_CASE];
+ [alert show];
+ } else if ([module isEqualToString:MODULE_MSG]) {
+ //进站内信
+ alert = [[UIAlertView alloc] initWithTitle:@"您有新消息" message:[aps objectForKey:@"alert"] delegate:self cancelButtonTitle:@"忽略" otherButtonTitles:@"查看", nil];
+ alert.apsID = [userInfo stringForKey:@"cm"];
+ _msgTitle = [userInfo stringForKey:@"cmTitle"];
+ [alert setTag:TAG_APS];
+ [alert show];
+ }
+ else if ([module isEqualToString:MODULE_CONVERSATION]) {
+ //进医生群组
+ [UIAlertView showWithTitle:@"你有新消息" message:[aps objectForKey:@"alert"] cancelButtonTitle:@"忽略" otherButtonTitles:@[@"查看"] tapBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+ if (buttonIndex == 1) {
+ [self pushConvsationChatVCWithConversationId:[userInfo objectForKey:@"id"]];
+ }
+ }];
+ }else if([module isEqualToString:MODULE_BOOKINGDETAIL]){
+ //进站内信详情
+ self.apsReleationId = [userInfo stringForKey:@"cm"];
+ _msgTitle = [userInfo stringForKey:@"cmTitle"];
+ __weak AppDelegate *weakSelf = self;
+ [UIAlertView showWithTitle:@"您有新消息" message:[aps objectForKey:@"alert"] cancelButtonTitle:@"忽略" otherButtonTitles:@[@"查看"] tapBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+ if (buttonIndex == 1) {
+ [weakSelf pushMsgViewController];
+ }
+ }];
+ }else if (currentState == UIApplicationStateBackground || currentState == UIApplicationStateInactive) {
+ //background or inactive
+ if ([module isEqualToString:MODULE_CASE]) {
+ self.tabBarController.selectedIndex = TABBAR_INDEX_MY;
+ UINavigationController *nc = (UINavigationController *)self.tabBarController.selectedViewController;
+ HDFMyInfoViewController *mvc = [nc.viewControllers objectAtIndex:0];
+ [mvc pushToCaseOrderListViewController];
+ } else if ([module isEqualToString:MODULE_MSG]) {
+ //进站内信
+ self.apsReleationId = [userInfo stringForKey:@"cm"];
+ _msgTitle = [userInfo stringForKey:@"cmTitle"];
+ [self pushMsgViewController];
+ }else if ([module isEqualToString:MODULE_CONVERSATION]) {
+ //进医生群组
+ [self pushConvsationChatVCWithConversationId:[userInfo objectForKey:@"id"]];
+ }else if([module isEqualToString:MODULE_BOOKINGDETAIL]){
+ //进订单详情 ； 5-28 服务端无法兼容老版本， 修改为推送到 订单详情页
+ self.apsReleationId = [userInfo stringForKey:@"cm"];
+ _msgTitle = [userInfo stringForKey:@"cmTitle"];
+ [self pushMsgViewController];
+ }
+ 
+ else if([module isEqualToString:MODULE_MEDICINEDIARY]){
+ //用药日记
+ NSString *userId = [userInfo objectForKey:@"userid"];
+ if (![userId isEqualToString:[HaodfUserManager sharedManager].userIdString]) return;    //非当前用户
+ 
+ NSString *childModule = [userInfo objectForKey:@"cm"];
+ NSString *patientId = [userInfo objectForKey:@"pid"];
+ NSString *patientName = [userInfo objectForKey:@"pn"];
+ 
+ if ([childModule isEqualToString:@"v"]) {                //剩余药量
+ [self pushMedicationDiaryDetailViewControllerWithPatientId:patientId patientName:patientName showChestRedDot:YES notificationName:childModule];
+ }
+ else if ([childModule isEqualToString:@"ano"]) {        //添加批注
+ [self pushMedicationDiaryDetailViewControllerWithPatientId:patientId patientName:patientName showChestRedDot:NO notificationName:childModule];
+ }
+ else if ([childModule isEqualToString:@"am"]) {   //添加药物成功
+ [self pushMedicationDiaryDetailViewControllerWithPatientId:patientId patientName:patientName showChestRedDot:YES notificationName:childModule];
+ }
+ }
+ }
+ 
+ 
+ */
