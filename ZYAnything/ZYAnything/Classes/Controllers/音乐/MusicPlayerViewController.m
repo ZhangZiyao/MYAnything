@@ -19,6 +19,10 @@
     [super viewDidLoad];
     self.title = @"音乐播放器";
     self.view.backgroundColor = BGColor;
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [self.view addSubview:btn];
+    
 }
 
 - (void)didReceiveMemoryWarning {
