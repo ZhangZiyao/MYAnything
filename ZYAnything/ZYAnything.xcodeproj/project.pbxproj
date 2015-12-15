@@ -53,8 +53,7 @@
 		2ED81D411BF8C32500127640 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED81D401BF8C32500127640 /* libstdc++.6.0.9.tbd */; };
 		2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */; };
 		2EF326AA1BF806C800649C2E /* MapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2EF326A91BF806C800649C2E /* MapViewController.mm */; };
-		2EF3E1CE1C095C1E00902B30 /* ZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3E1CD1C095C1E00902B30 /* ZYNavigationController.m */; };
-		2EF3E1D11C095C3900902B30 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3E1D01C095C3900902B30 /* UIViewController+Ext.m */; };
+		2EF9D5C41C201EB500EC2EAE /* MyBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9D5C31C201EB500EC2EAE /* MyBlogViewController.m */; };
 		2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBB6791BF5E9F80019AA52 /* main.m */; };
 		2EFBB6831BF5E9F80019AA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6811BF5E9F80019AA52 /* Main.storyboard */; };
 		2EFBB6851BF5E9F80019AA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */; };
@@ -170,10 +169,8 @@
 		2EF326A51BF79B4500649C2E /* VisitPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitPhotoViewController.m; sourceTree = "<group>"; };
 		2EF326A81BF806C800649C2E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2EF326A91BF806C800649C2E /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapViewController.mm; sourceTree = "<group>"; };
-		2EF3E1CC1C095C1E00902B30 /* ZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNavigationController.h; sourceTree = "<group>"; };
-		2EF3E1CD1C095C1E00902B30 /* ZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNavigationController.m; sourceTree = "<group>"; };
-		2EF3E1CF1C095C3900902B30 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
-		2EF3E1D01C095C3900902B30 /* UIViewController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
+		2EF9D5C21C201EB500EC2EAE /* MyBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBlogViewController.h; sourceTree = "<group>"; };
+		2EF9D5C31C201EB500EC2EAE /* MyBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBlogViewController.m; sourceTree = "<group>"; };
 		2EFBB6751BF5E9F80019AA52 /* ZYAnything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYAnything.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFBB6791BF5E9F80019AA52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EFBB6821BF5E9F80019AA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -411,15 +408,13 @@
 			path = BaiduMap;
 			sourceTree = "<group>";
 		};
-		2EF3E1CB1C095BE800902B30 /* Navigation */ = {
+		2EF9D5C11C201EA500EC2EAE /* MyBlog */ = {
 			isa = PBXGroup;
 			children = (
-				2EF3E1CC1C095C1E00902B30 /* ZYNavigationController.h */,
-				2EF3E1CD1C095C1E00902B30 /* ZYNavigationController.m */,
-				2EF3E1CF1C095C3900902B30 /* UIViewController+Ext.h */,
-				2EF3E1D01C095C3900902B30 /* UIViewController+Ext.m */,
+				2EF9D5C21C201EB500EC2EAE /* MyBlogViewController.h */,
+				2EF9D5C31C201EB500EC2EAE /* MyBlogViewController.m */,
 			);
-			path = Navigation;
+			path = MyBlog;
 			sourceTree = "<group>";
 		};
 		2EFBB66C1BF5E9F80019AA52 = {
@@ -498,7 +493,6 @@
 		2EFBB6AB1BF5EAFC0019AA52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2EF3E1CB1C095BE800902B30 /* Navigation */,
 				2EFBB6BC1BF5EB2C0019AA52 /* App */,
 				2EFBB6AF1BF5EAFC0019AA52 /* Category */,
 				2EFBB6B01BF5EAFC0019AA52 /* Controllers */,
@@ -521,6 +515,7 @@
 		2EFBB6B01BF5EAFC0019AA52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2EF9D5C11C201EA500EC2EAE /* MyBlog */,
 				2E87E6BA1BF9C900005BEBD2 /* 二维码 */,
 				2E87E6BB1BF9C900005BEBD2 /* 视频 */,
 				2E87E6BC1BF9C900005BEBD2 /* 音乐 */,
@@ -789,16 +784,15 @@
 				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
 				2E87E6E31BFB104B005BEBD2 /* PilotView.m in Sources */,
 				2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */,
-				2EF3E1D11C095C3900902B30 /* UIViewController+Ext.m in Sources */,
 				2E87E6C21BF9CD96005BEBD2 /* MusicPlayerViewController.m in Sources */,
 				2E87E6DB1BFB0790005BEBD2 /* QRCodeGenerator.m in Sources */,
 				2EF326AA1BF806C800649C2E /* MapViewController.mm in Sources */,
-				2EF3E1CE1C095C1E00902B30 /* ZYNavigationController.m in Sources */,
 				2E87E6DF1BFB0790005BEBD2 /* rscode.c in Sources */,
 				2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */,
 				2E87E6E01BFB0790005BEBD2 /* split.c in Sources */,
 				2E87E6C51BF9CDA6005BEBD2 /* VideoPlayerViewController.m in Sources */,
 				2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.mm in Sources */,
+				2EF9D5C41C201EB500EC2EAE /* MyBlogViewController.m in Sources */,
 				2E4AADC21BFDC79800287E8B /* Base64.m in Sources */,
 				2E87E6BF1BF9CD6B005BEBD2 /* QRCodeViewController.m in Sources */,
 				2E87E6DE1BFB0790005BEBD2 /* qrspec.c in Sources */,

@@ -14,6 +14,7 @@
 #import "MusicPlayerViewController.h"
 #import "VideoPlayerViewController.h"
 #import "Base64.h"
+#import "MyBlogViewController.h"
 
 @interface ViewController ()
 
@@ -35,12 +36,6 @@
     
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"111",@"222",@"222",@"sdsd",@"wwer",@"werewr",dataa,@"qqqqq", nil];
     NSLog(@"%@%@",str,dic);
-    
-    
-    
-    
-    
-    
     
     
 }
@@ -82,6 +77,13 @@
     [videoPlayer addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
     videoPlayer.tag = 14;
     
+    UIButton *blog = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(videoPlayer)+5, MAINSCREEN_WIDTH, 30)];
+    [blog setTitle:@"我的博客" forState:UIControlStateNormal];
+    [blog setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:blog];
+    [blog addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    blog.tag = 15;
+    
 }
 
 - (void)btnClickAction:(UIButton *)sender{
@@ -111,7 +113,10 @@
         {
             vc = [[VideoPlayerViewController alloc] init];
         }
-            break;
+        case 15:
+        {
+            vc = [[MyBlogViewController alloc] init];
+        }
         default:
             break;
     }
