@@ -102,7 +102,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"地图";
+    [self setNavBack:@selector(backAction)];
+    [self setNavTitle:@"地图/定位"];
     self.view.backgroundColor = BGColor;
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(pushSearchView)];
     self.navigationItem.rightBarButtonItem = rightButton;
@@ -113,7 +114,7 @@
     locService = [[BMKLocationService alloc] init];
     
     
-    UIView *sView = [[UIView alloc] initWithFrame:CGRectMake(0, MAINSCREEN_HEIGHT-40, MAINSCREEN_WIDTH, 40)];
+    UIView *sView = [[UIView alloc] initWithFrame:CGRectMake(0, MAINSCREEN_HEIGHT-104, MAINSCREEN_WIDTH, 40)];
     [self.view addSubview:sView];
 //    sView.backgroundColor = GreenBtnColor;
     

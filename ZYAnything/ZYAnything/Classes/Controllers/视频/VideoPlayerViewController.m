@@ -17,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"视频播放器";
+    [self setNavBack:@selector(backAction)];
+    [self setNavTitle:@"视频播放器"];
     self.view.backgroundColor = BGColor;
 }
 

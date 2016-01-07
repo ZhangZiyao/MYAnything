@@ -22,6 +22,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = BGColor;
     
+    [self setNavBack:@selector(backAction)];
+    [self setNavTitle:@"筛选"];
+    
     
     UIButton *sift = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, 50, 30)];
     [sift setTitle:@"筛选" forState:UIControlStateNormal];
@@ -51,8 +54,8 @@
     [view addGestureRecognizer:tap];
     //    [self.view addSubview:view];
     [self.view.window addSubview:view];
-    [UIView animateWithDuration:1 animations:^{
-        window.frame = CGRectMake(100, 0, MAINSCREEN_WIDTH-100, MAINSCREEN_HEIGHT);
+    [UIView animateWithDuration:0.2 animations:^{
+        window.frame = CGRectMake(60, 0, MAINSCREEN_WIDTH-60, MAINSCREEN_HEIGHT);
     }];
     
     self.upView = view;
@@ -60,7 +63,7 @@
     __weak typeof(self) weak = self;
     [up setCancleBarItemHandle:^{
         [UIView animateWithDuration:1 animations:^{
-            weak.window.frame = CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-100, MAINSCREEN_HEIGHT);
+            weak.window.frame = CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-80, MAINSCREEN_HEIGHT);
             [weak.upView removeFromSuperview];
         }];
         
@@ -72,8 +75,8 @@
 }
 
 - (void)tapAction{
-    [UIView animateWithDuration:1 animations:^{
-        self.window.frame = CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-100, MAINSCREEN_HEIGHT);
+    [UIView animateWithDuration:1.0 animations:^{
+        self.window.frame = CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-60, MAINSCREEN_HEIGHT);
     }];
     [self.upView removeFromSuperview];
     

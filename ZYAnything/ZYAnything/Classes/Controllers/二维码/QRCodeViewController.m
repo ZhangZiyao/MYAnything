@@ -52,24 +52,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"二维码";
+    [self setNavBack:@selector(backAction)];
+    [self setNavTitle:@"二维码"];
     self.view.backgroundColor = BGColor;
     
     _captureSession = nil;
     _isReading = NO;
     
-    _codeText = [[UITextField alloc] initWithFrame:CGRectMake(8, NAV_HEIGHT+8, MAINSCREEN_WIDTH-100, 30)];
+    _codeText = [[UITextField alloc] initWithFrame:CGRectMake(8, 8, MAINSCREEN_WIDTH-100, 30)];
     [self.view addSubview:_codeText];
     _codeText.delegate = self;
     _codeText.placeholder = @"输入字符串生成二维码";
     
-    _changeBtn = [[UIButton alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH-100, NAV_HEIGHT+8, 80, 30)];
+    _changeBtn = [[UIButton alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH-100, 8, 80, 30)];
     [self.view addSubview:_changeBtn];
     [_changeBtn setTitle:@"生成" forState:UIControlStateNormal];
     [_changeBtn setBackgroundColor:BlueBtnColor];
     [_changeBtn addTarget:self action:@selector(changeStringToCode) forControlEvents:UIControlEventTouchUpInside];
     //二维码图片
-    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH/2.f-120, NAV_HEIGHT+100, 240, 240)];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH/2.f-120, 100, 240, 240)];
     
     _viewPreview = [[UIView alloc] initWithFrame:CGRectMake(8, MaxY(_codeText)+8, MAINSCREEN_WIDTH-16, MAINSCREEN_HEIGHT-NAV_HEIGHT-200)];
     [self.view addSubview:_viewPreview];
@@ -84,7 +85,7 @@
     _lblStatus.text = @"二维码扫描";
     
     
-    _startScanBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-100, MAINSCREEN_WIDTH-16, 40)];
+    _startScanBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-104, MAINSCREEN_WIDTH-16, 40)];
     [self.view addSubview:_startScanBtn];
     [_startScanBtn setBackgroundColor:BlueBtnColor];
     [_startScanBtn setTitle:@"开始扫描" forState:UIControlStateNormal];

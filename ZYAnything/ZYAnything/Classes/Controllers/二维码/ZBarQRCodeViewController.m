@@ -34,7 +34,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"ZBar二维码扫描";
+    [self setNavBack:@selector(backAction)];
+    [self setNavTitle:@"ZBar二维码扫描"];
     self.view.backgroundColor = BGColor;
     
     imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, NAV_HEIGHT+20, MAINSCREEN_WIDTH-40, MAINSCREEN_WIDTH-40)];

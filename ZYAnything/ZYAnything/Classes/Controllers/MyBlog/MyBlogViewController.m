@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = BGColor;
+    [self setNavTitle:@"MyBlog"];
+    [self setNavBack:@selector(backAction)];
     
     webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT)];
     [self.view addSubview:webView];

@@ -17,7 +17,13 @@
 #import "MyBlogViewController.h"
 #import "SiftViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray *_btnNameArray;
+    NSArray *_viewControllerArray;
+}
+
+@property (nonatomic,strong) UITableView *tableView;
 
 @end
 
@@ -25,128 +31,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Anything";
+    [self setNavColor];
+    [self setNavTitle:@"Anything"];
+    
     
     self.view.backgroundColor = BGColor;
-    [self makeUI];
+//    [self makeUI];
     
-    NSString *str = [@"lalala" base64EncodedString];
+    _btnNameArray = @[@"访问相册",@"地图/定位",@"二维码",@"我的博客",@"筛选",@"音乐播放器",@"视频播放器"];
+    _viewControllerArray = [[NSArray alloc] initWithObjects:
+                            @"VisitPhotoViewController",
+                            @"MapViewController",
+                            @"QRCodeViewController",
+                            @"MyBlogViewController",
+                            @"SiftViewController",
+                            @"MusicPlayerViewController",
+                            @"VideoPlayerViewController",
+                            nil];
     
-    NSData *dataa = [NSData dataWithBase64EncodedString:str];
     
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT)];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
     
-    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"111",@"222",@"222",@"sdsd",@"wwer",@"werewr",dataa,@"qqqqq", nil];
-    NSLog(@"%@%@",str,dic);
-    
-    
-}
-
-- (void)makeUI{
-    
-    UIButton *visitPhoto = [[UIButton alloc] initWithFrame:CGRectMake(0, NAV_HEIGHT+5, MAINSCREEN_WIDTH, 30)];
-    [visitPhoto setTitle:@"访问相册" forState:UIControlStateNormal];
-    [visitPhoto setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:visitPhoto];
-    [visitPhoto addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    visitPhoto.tag = 10;
-    
-    UIButton *map = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(visitPhoto)+5, MAINSCREEN_WIDTH, 30)];
-    [map setTitle:@"地图/定位相关" forState:UIControlStateNormal];
-    [map setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:map];
-    [map addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    map.tag = 11;
-    
-    UIButton *qrCode = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(map)+5, MAINSCREEN_WIDTH, 30)];
-    [qrCode setTitle:@"二维码" forState:UIControlStateNormal];
-    [qrCode setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:qrCode];
-    [qrCode addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    qrCode.tag = 12;
-    
-    UIButton *musicPlayer = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(qrCode)+5, MAINSCREEN_WIDTH, 30)];
-    [musicPlayer setTitle:@"音乐播放器" forState:UIControlStateNormal];
-    [musicPlayer setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:musicPlayer];
-    [musicPlayer addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    musicPlayer.tag = 13;
-    
-    UIButton *videoPlayer = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(musicPlayer)+5, MAINSCREEN_WIDTH, 30)];
-    [videoPlayer setTitle:@"视频播放器" forState:UIControlStateNormal];
-    [videoPlayer setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:videoPlayer];
-    [videoPlayer addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    videoPlayer.tag = 14;
-    
-    UIButton *blog = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(videoPlayer)+5, MAINSCREEN_WIDTH, 30)];
-    [blog setTitle:@"我的博客" forState:UIControlStateNormal];
-    [blog setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:blog];
-    [blog addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    blog.tag = 15;
-    
-    UIButton *nav = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(blog)+5, MAINSCREEN_WIDTH, 30)];
-    [nav setTitle:@"自定义导航栏" forState:UIControlStateNormal];
-    [nav setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:nav];
-    [nav addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    nav.tag = 16;
-    
-    UIButton *sift = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(nav)+5, MAINSCREEN_WIDTH, 30)];
-    [sift setTitle:@"筛选" forState:UIControlStateNormal];
-    [sift setTitleColor:BlueBtnColor forState:UIControlStateNormal];
-    [self.view addSubview:sift];
-    [sift addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
-    sift.tag = 17;
     
 }
 
-- (void)btnClickAction:(UIButton *)sender{
-    UIViewController *vc = nil;
-    switch (sender.tag) {
-        case 10:
-        {
-            vc = [[VisitPhotoViewController alloc] init];
-        }
-            break;
-        case 11:
-        {
-            vc = [[MapViewController alloc] init];
-        }
-            break;
-        case 12:
-        {
-            vc = [[QRCodeViewController alloc] init];
-        }
-            break;
-        case 13:
-        {
-            vc = [[MusicPlayerViewController alloc] init];
-        }
-            break;
-        case 14:
-        {
-            vc = [[VideoPlayerViewController alloc] init];
-        }
-        case 15:
-        {
-            vc = [[MyBlogViewController alloc] init];
-        }
-        case 16:
-        {
-            vc = [[MyBlogViewController alloc] init];
-        }
-        case 17:
-        {
-            vc = [[SiftViewController alloc] init];
-        }
-        default:
-            break;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *idStr = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:idStr];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:idStr];
     }
-    
-    [self.navigationController pushViewController:vc animated:YES];
-    
-    
+    cell.textLabel.text = [_btnNameArray objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *viewController = [[NSClassFromString([_viewControllerArray objectAtIndex:indexPath.row]) alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _btnNameArray.count;
 }
 
 - (void)didReceiveMemoryWarning {

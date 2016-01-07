@@ -12,7 +12,7 @@
 #import "SelectBtnTableViewCell.h"
 
 
-#define kMGLeftSpace 100
+#define kMGLeftSpace 60
 //屏幕高度
 #define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 //屏幕宽
@@ -49,7 +49,7 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     // Do any additional setup after loading the view.
-    self.arrTitle = @[@[@"配送至"],@[@"品牌",@"分类",@"颜色"]];
+    self.arrTitle = @[@[@"配送至"],@[@"订单状态",@"订单类型",@"目的地"]];
 }
 
 - (void)setCancleBarItemHandle:(MGBasicBlock)basicBlock{

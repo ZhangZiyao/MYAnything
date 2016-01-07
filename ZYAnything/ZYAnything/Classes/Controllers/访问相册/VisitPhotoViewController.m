@@ -20,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"选择照片";
+    [self setNavBack:@selector(backAction)];
+    [self setNavTitle:@"选择照片"];
     self.view.backgroundColor = BGColor;
     
     photo = [[UIImageView alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH/2.f-100, 80, 200, 200)];

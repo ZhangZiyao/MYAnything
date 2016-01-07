@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import "PilotView.h"
+#import "ZYNavigationController.h"
 
 BMKMapManager *_mapManager;
 @interface AppDelegate ()
@@ -30,7 +31,7 @@ BMKMapManager *_mapManager;
     }
     
     ViewController *mainVC = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    ZYNavigationController *nav = [[ZYNavigationController alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
