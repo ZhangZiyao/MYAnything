@@ -8,7 +8,7 @@
 
 #import "MGMineMenuVc.h"
 #import "MGSubSelectVc.h"
-
+#import "UIDefines.h"
 #import "SelectBtnTableViewCell.h"
 
 
@@ -37,12 +37,15 @@
     [super viewDidLoad];
 //    self.title = @"筛选";
     _todyBtnStation = 1;
+    [self setNavColor];
     UIBarButtonItem *cancelBarItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(cancelAction)];
+    [cancelBarItem setTintColor:[UIColor whiteColor]];
     self.navigationItem.leftBarButtonItem = cancelBarItem;
-    self.navigationItem.title = @"筛选";
+//    self.navigationItem.title = @"筛选";
     
      UIBarButtonItem *SureBarItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStyleDone target:self action:@selector(rightAction)];
 //    UIBarButtonItem *spaceBar = [self spacerWithSpace:30];
+    [SureBarItem setTintColor:[UIColor whiteColor]];
     self.navigationItem.rightBarButtonItems = @[SureBarItem];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, kScreenWidth-kMGLeftSpace, kScreenHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;

@@ -7,7 +7,8 @@
 //
 
 #import "MGSubSelectVc.h"
-#define kMGLeftSpace 100
+#import "UIDefines.h"
+#define kMGLeftSpace 60
 //屏幕高度
 #define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 //屏幕宽
@@ -20,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"子菜单";
+    [self setNavTitle:@"子菜单"];
+    [self setNavBack:@selector(backAction)];
+    
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, kScreenWidth-kMGLeftSpace, kScreenHeight)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -58,17 +61,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

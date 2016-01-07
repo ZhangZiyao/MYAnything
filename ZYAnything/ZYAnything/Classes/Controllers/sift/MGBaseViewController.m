@@ -8,7 +8,7 @@
 
 #import "MGBaseViewController.h"
 typedef void (^MGBasicBlock)();
-#define kMGLeftSpace 100
+#define kMGLeftSpace 60
 //屏幕高度
 #define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 //屏幕宽

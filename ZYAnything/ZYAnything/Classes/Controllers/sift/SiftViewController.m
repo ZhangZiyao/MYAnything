@@ -35,7 +35,7 @@
 }
 
 - (void)btnAction{
-    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-100, MAINSCREEN_HEIGHT)];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-60, MAINSCREEN_HEIGHT)];
     window.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:1];
     window.windowLevel = UIWindowLevelNormal;
     window.hidden = NO;
@@ -48,7 +48,7 @@
     
     
     
-    UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
+    UIView *view = [[UIView alloc] initWithFrame:self.window.bounds];
     view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
     UITapGestureRecognizer *tap  = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
     [view addGestureRecognizer:tap];
@@ -63,7 +63,7 @@
     __weak typeof(self) weak = self;
     [up setCancleBarItemHandle:^{
         [UIView animateWithDuration:1 animations:^{
-            weak.window.frame = CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-80, MAINSCREEN_HEIGHT);
+            weak.window.frame = CGRectMake(MAINSCREEN_WIDTH, 0, MAINSCREEN_WIDTH-60, MAINSCREEN_HEIGHT);
             [weak.upView removeFromSuperview];
         }];
         
@@ -88,17 +88,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
