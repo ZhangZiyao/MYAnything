@@ -15,6 +15,7 @@
 #import "VideoPlayerViewController.h"
 #import "Base64.h"
 #import "MyBlogViewController.h"
+#import "SiftViewController.h"
 
 @interface ViewController ()
 
@@ -84,6 +85,20 @@
     [blog addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
     blog.tag = 15;
     
+    UIButton *nav = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(blog)+5, MAINSCREEN_WIDTH, 30)];
+    [nav setTitle:@"自定义导航栏" forState:UIControlStateNormal];
+    [nav setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:nav];
+    [nav addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    nav.tag = 16;
+    
+    UIButton *sift = [[UIButton alloc] initWithFrame:CGRectMake(0,MaxY(nav)+5, MAINSCREEN_WIDTH, 30)];
+    [sift setTitle:@"筛选" forState:UIControlStateNormal];
+    [sift setTitleColor:BlueBtnColor forState:UIControlStateNormal];
+    [self.view addSubview:sift];
+    [sift addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
+    sift.tag = 17;
+    
 }
 
 - (void)btnClickAction:(UIButton *)sender{
@@ -116,6 +131,14 @@
         case 15:
         {
             vc = [[MyBlogViewController alloc] init];
+        }
+        case 16:
+        {
+            vc = [[MyBlogViewController alloc] init];
+        }
+        case 17:
+        {
+            vc = [[SiftViewController alloc] init];
         }
         default:
             break;
