@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3F73241C3FC284004A6DE2 /* ZYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73231C3FC284004A6DE2 /* ZYTableViewCell.m */; };
+		2E3F73271C3FC2AE004A6DE2 /* ZYTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73261C3FC2AE004A6DE2 /* ZYTableViewItem.m */; };
+		2E3F733D1C3FC603004A6DE2 /* RETableViewOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F732B1C3FC603004A6DE2 /* RETableViewOptionCell.m */; };
+		2E3F733E1C3FC603004A6DE2 /* REMultipleChoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F732E1C3FC603004A6DE2 /* REMultipleChoiceItem.m */; };
+		2E3F733F1C3FC603004A6DE2 /* RERadioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73301C3FC603004A6DE2 /* RERadioItem.m */; };
+		2E3F73401C3FC603004A6DE2 /* RETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73321C3FC603004A6DE2 /* RETableViewCell.m */; };
+		2E3F73411C3FC603004A6DE2 /* RETableViewCellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73341C3FC603004A6DE2 /* RETableViewCellStyle.m */; };
+		2E3F73421C3FC603004A6DE2 /* RETableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73361C3FC603004A6DE2 /* RETableViewItem.m */; };
+		2E3F73431C3FC603004A6DE2 /* RETableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73381C3FC603004A6DE2 /* RETableViewManager.m */; };
+		2E3F73441C3FC603004A6DE2 /* RETableViewOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F733A1C3FC603004A6DE2 /* RETableViewOptionsController.m */; };
+		2E3F73451C3FC603004A6DE2 /* RETableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F733C1C3FC603004A6DE2 /* RETableViewSection.m */; };
+		2E3F734B1C3FC7A2004A6DE2 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F734A1C3FC7A2004A6DE2 /* MenuViewController.m */; };
+		2E3F734E1C3FC87B004A6DE2 /* SubSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F734D1C3FC87B004A6DE2 /* SubSelectViewController.m */; };
+		2E3F73571C3FD95C004A6DE2 /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3F73561C3FD95C004A6DE2 /* ControlsViewController.m */; };
 		2E4AADC21BFDC79800287E8B /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AADC11BFDC79800287E8B /* Base64.m */; };
 		2E4AADE71BFDD4D300287E8B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */; };
 		2E4AADE91BFDD4DF00287E8B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AADE81BFDD4DF00287E8B /* CoreVideo.framework */; };
@@ -43,9 +57,6 @@
 		2E87E6EE1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87E6ED1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m */; };
 		2EBC3D6B1C03138000A44840 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBC3D6A1C03138000A44840 /* libiconv.tbd */; };
 		2ECB6D761C3E5A6F0016AAA8 /* SiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D751C3E5A6F0016AAA8 /* SiftViewController.m */; };
-		2ECB6D7D1C3E5B630016AAA8 /* MGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D781C3E5B630016AAA8 /* MGBaseViewController.m */; };
-		2ECB6D7E1C3E5B630016AAA8 /* MGMineMenuVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D7A1C3E5B630016AAA8 /* MGMineMenuVc.m */; };
-		2ECB6D7F1C3E5B630016AAA8 /* MGSubSelectVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D7C1C3E5B630016AAA8 /* MGSubSelectVc.m */; };
 		2ECB6D821C3E5BC30016AAA8 /* SelectBtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D811C3E5BC30016AAA8 /* SelectBtnTableViewCell.m */; };
 		2ECB6D881C3E62590016AAA8 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D851C3E62590016AAA8 /* UIViewController+Ext.m */; };
 		2ECB6D891C3E62590016AAA8 /* ZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECB6D871C3E62590016AAA8 /* ZYNavigationController.m */; };
@@ -93,6 +104,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3F73221C3FC284004A6DE2 /* ZYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableViewCell.h; sourceTree = "<group>"; };
+		2E3F73231C3FC284004A6DE2 /* ZYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableViewCell.m; sourceTree = "<group>"; };
+		2E3F73251C3FC2AE004A6DE2 /* ZYTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableViewItem.h; sourceTree = "<group>"; };
+		2E3F73261C3FC2AE004A6DE2 /* ZYTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableViewItem.m; sourceTree = "<group>"; };
+		2E3F732A1C3FC603004A6DE2 /* RETableViewOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewOptionCell.h; sourceTree = "<group>"; };
+		2E3F732B1C3FC603004A6DE2 /* RETableViewOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewOptionCell.m; sourceTree = "<group>"; };
+		2E3F732D1C3FC603004A6DE2 /* REMultipleChoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMultipleChoiceItem.h; sourceTree = "<group>"; };
+		2E3F732E1C3FC603004A6DE2 /* REMultipleChoiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMultipleChoiceItem.m; sourceTree = "<group>"; };
+		2E3F732F1C3FC603004A6DE2 /* RERadioItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERadioItem.h; sourceTree = "<group>"; };
+		2E3F73301C3FC603004A6DE2 /* RERadioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERadioItem.m; sourceTree = "<group>"; };
+		2E3F73311C3FC603004A6DE2 /* RETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewCell.h; sourceTree = "<group>"; };
+		2E3F73321C3FC603004A6DE2 /* RETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewCell.m; sourceTree = "<group>"; };
+		2E3F73331C3FC603004A6DE2 /* RETableViewCellStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewCellStyle.h; sourceTree = "<group>"; };
+		2E3F73341C3FC603004A6DE2 /* RETableViewCellStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewCellStyle.m; sourceTree = "<group>"; };
+		2E3F73351C3FC603004A6DE2 /* RETableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewItem.h; sourceTree = "<group>"; };
+		2E3F73361C3FC603004A6DE2 /* RETableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewItem.m; sourceTree = "<group>"; };
+		2E3F73371C3FC603004A6DE2 /* RETableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewManager.h; sourceTree = "<group>"; };
+		2E3F73381C3FC603004A6DE2 /* RETableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewManager.m; sourceTree = "<group>"; };
+		2E3F73391C3FC603004A6DE2 /* RETableViewOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewOptionsController.h; sourceTree = "<group>"; };
+		2E3F733A1C3FC603004A6DE2 /* RETableViewOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewOptionsController.m; sourceTree = "<group>"; };
+		2E3F733B1C3FC603004A6DE2 /* RETableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewSection.h; sourceTree = "<group>"; };
+		2E3F733C1C3FC603004A6DE2 /* RETableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewSection.m; sourceTree = "<group>"; };
+		2E3F73491C3FC7A2004A6DE2 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		2E3F734A1C3FC7A2004A6DE2 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2E3F734C1C3FC87B004A6DE2 /* SubSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubSelectViewController.h; sourceTree = "<group>"; };
+		2E3F734D1C3FC87B004A6DE2 /* SubSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSelectViewController.m; sourceTree = "<group>"; };
+		2E3F73551C3FD95C004A6DE2 /* ControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsViewController.h; sourceTree = "<group>"; };
+		2E3F73561C3FD95C004A6DE2 /* ControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsViewController.m; sourceTree = "<group>"; };
 		2E4AADC01BFDC79800287E8B /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		2E4AADC11BFDC79800287E8B /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -168,12 +207,6 @@
 		2EBC3D6A1C03138000A44840 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		2ECB6D741C3E5A6F0016AAA8 /* SiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiftViewController.h; sourceTree = "<group>"; };
 		2ECB6D751C3E5A6F0016AAA8 /* SiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiftViewController.m; sourceTree = "<group>"; };
-		2ECB6D771C3E5B630016AAA8 /* MGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGBaseViewController.h; sourceTree = "<group>"; };
-		2ECB6D781C3E5B630016AAA8 /* MGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGBaseViewController.m; sourceTree = "<group>"; };
-		2ECB6D791C3E5B630016AAA8 /* MGMineMenuVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMineMenuVc.h; sourceTree = "<group>"; };
-		2ECB6D7A1C3E5B630016AAA8 /* MGMineMenuVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMineMenuVc.m; sourceTree = "<group>"; };
-		2ECB6D7B1C3E5B630016AAA8 /* MGSubSelectVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSubSelectVc.h; sourceTree = "<group>"; };
-		2ECB6D7C1C3E5B630016AAA8 /* MGSubSelectVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSubSelectVc.m; sourceTree = "<group>"; };
 		2ECB6D801C3E5BC30016AAA8 /* SelectBtnTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBtnTableViewCell.h; sourceTree = "<group>"; };
 		2ECB6D811C3E5BC30016AAA8 /* SelectBtnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBtnTableViewCell.m; sourceTree = "<group>"; };
 		2ECB6D841C3E62590016AAA8 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
@@ -283,6 +316,58 @@
 				2ECB6D831C3E62590016AAA8 /* Navigation */,
 			);
 			path = CustomNavi;
+			sourceTree = "<group>";
+		};
+		2E3F73211C3FC26C004A6DE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E3F73221C3FC284004A6DE2 /* ZYTableViewCell.h */,
+				2E3F73231C3FC284004A6DE2 /* ZYTableViewCell.m */,
+				2E3F73251C3FC2AE004A6DE2 /* ZYTableViewItem.h */,
+				2E3F73261C3FC2AE004A6DE2 /* ZYTableViewItem.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E3F73281C3FC603004A6DE2 /* RETableViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				2E3F73291C3FC603004A6DE2 /* Cells */,
+				2E3F732C1C3FC603004A6DE2 /* Items */,
+				2E3F73311C3FC603004A6DE2 /* RETableViewCell.h */,
+				2E3F73321C3FC603004A6DE2 /* RETableViewCell.m */,
+				2E3F73331C3FC603004A6DE2 /* RETableViewCellStyle.h */,
+				2E3F73341C3FC603004A6DE2 /* RETableViewCellStyle.m */,
+				2E3F73351C3FC603004A6DE2 /* RETableViewItem.h */,
+				2E3F73361C3FC603004A6DE2 /* RETableViewItem.m */,
+				2E3F73371C3FC603004A6DE2 /* RETableViewManager.h */,
+				2E3F73381C3FC603004A6DE2 /* RETableViewManager.m */,
+				2E3F73391C3FC603004A6DE2 /* RETableViewOptionsController.h */,
+				2E3F733A1C3FC603004A6DE2 /* RETableViewOptionsController.m */,
+				2E3F733B1C3FC603004A6DE2 /* RETableViewSection.h */,
+				2E3F733C1C3FC603004A6DE2 /* RETableViewSection.m */,
+			);
+			path = RETableViewManager;
+			sourceTree = "<group>";
+		};
+		2E3F73291C3FC603004A6DE2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2E3F732A1C3FC603004A6DE2 /* RETableViewOptionCell.h */,
+				2E3F732B1C3FC603004A6DE2 /* RETableViewOptionCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2E3F732C1C3FC603004A6DE2 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				2E3F732D1C3FC603004A6DE2 /* REMultipleChoiceItem.h */,
+				2E3F732E1C3FC603004A6DE2 /* REMultipleChoiceItem.m */,
+				2E3F732F1C3FC603004A6DE2 /* RERadioItem.h */,
+				2E3F73301C3FC603004A6DE2 /* RERadioItem.m */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		2E4AADBF1BFDC79800287E8B /* Base64 */ = {
@@ -413,16 +498,18 @@
 		2ECB6D731C3E5A590016AAA8 /* sift */ = {
 			isa = PBXGroup;
 			children = (
+				2E3F73281C3FC603004A6DE2 /* RETableViewManager */,
 				2ECB6D741C3E5A6F0016AAA8 /* SiftViewController.h */,
 				2ECB6D751C3E5A6F0016AAA8 /* SiftViewController.m */,
-				2ECB6D771C3E5B630016AAA8 /* MGBaseViewController.h */,
-				2ECB6D781C3E5B630016AAA8 /* MGBaseViewController.m */,
-				2ECB6D791C3E5B630016AAA8 /* MGMineMenuVc.h */,
-				2ECB6D7A1C3E5B630016AAA8 /* MGMineMenuVc.m */,
-				2ECB6D7B1C3E5B630016AAA8 /* MGSubSelectVc.h */,
-				2ECB6D7C1C3E5B630016AAA8 /* MGSubSelectVc.m */,
 				2ECB6D801C3E5BC30016AAA8 /* SelectBtnTableViewCell.h */,
 				2ECB6D811C3E5BC30016AAA8 /* SelectBtnTableViewCell.m */,
+				2E3F73491C3FC7A2004A6DE2 /* MenuViewController.h */,
+				2E3F734A1C3FC7A2004A6DE2 /* MenuViewController.m */,
+				2E3F734C1C3FC87B004A6DE2 /* SubSelectViewController.h */,
+				2E3F734D1C3FC87B004A6DE2 /* SubSelectViewController.m */,
+				2E3F73551C3FD95C004A6DE2 /* ControlsViewController.h */,
+				2E3F73561C3FD95C004A6DE2 /* ControlsViewController.m */,
+				2E3F73211C3FC26C004A6DE2 /* View */,
 			);
 			path = sift;
 			sourceTree = "<group>";
@@ -850,30 +937,41 @@
 				2EFBB6B81BF5EAFC0019AA52 /* ViewController.m in Sources */,
 				2ECB6D881C3E62590016AAA8 /* UIViewController+Ext.m in Sources */,
 				2E87E6DD1BFB0790005BEBD2 /* qrinput.c in Sources */,
+				2E3F73441C3FC603004A6DE2 /* RETableViewOptionsController.m in Sources */,
+				2E3F734B1C3FC7A2004A6DE2 /* MenuViewController.m in Sources */,
 				2ECB6D761C3E5A6F0016AAA8 /* SiftViewController.m in Sources */,
+				2E3F734E1C3FC87B004A6DE2 /* SubSelectViewController.m in Sources */,
 				2E87E6D91BFB0790005BEBD2 /* bitstream.c in Sources */,
+				2E3F73421C3FC603004A6DE2 /* RETableViewItem.m in Sources */,
 				2E87E6B51BF993A3005BEBD2 /* POISearchViewController.mm in Sources */,
 				2ECB6D891C3E62590016AAA8 /* ZYNavigationController.m in Sources */,
+				2E3F73571C3FD95C004A6DE2 /* ControlsViewController.m in Sources */,
+				2E3F733D1C3FC603004A6DE2 /* RETableViewOptionCell.m in Sources */,
 				2E87E6EE1BFB19F3005BEBD2 /* ZBarQRCodeViewController.m in Sources */,
 				2EF326A61BF79B4500649C2E /* VisitPhotoViewController.m in Sources */,
 				2E87E6E31BFB104B005BEBD2 /* PilotView.m in Sources */,
 				2E87E6DC1BFB0790005BEBD2 /* qrencode.c in Sources */,
+				2E3F73451C3FC603004A6DE2 /* RETableViewSection.m in Sources */,
 				2E87E6C21BF9CD96005BEBD2 /* MusicPlayerViewController.m in Sources */,
-				2ECB6D7D1C3E5B630016AAA8 /* MGBaseViewController.m in Sources */,
+				2E3F733E1C3FC603004A6DE2 /* REMultipleChoiceItem.m in Sources */,
+				2E3F73271C3FC2AE004A6DE2 /* ZYTableViewItem.m in Sources */,
 				2E87E6DB1BFB0790005BEBD2 /* QRCodeGenerator.m in Sources */,
 				2EF326AA1BF806C800649C2E /* MapViewController.mm in Sources */,
 				2E87E6DF1BFB0790005BEBD2 /* rscode.c in Sources */,
 				2EFBB67A1BF5E9F80019AA52 /* main.m in Sources */,
 				2E87E6E01BFB0790005BEBD2 /* split.c in Sources */,
-				2ECB6D7E1C3E5B630016AAA8 /* MGMineMenuVc.m in Sources */,
+				2E3F73241C3FC284004A6DE2 /* ZYTableViewCell.m in Sources */,
 				2E87E6C51BF9CDA6005BEBD2 /* VideoPlayerViewController.m in Sources */,
+				2E3F73401C3FC603004A6DE2 /* RETableViewCell.m in Sources */,
 				2EFBB6BF1BF5EB2C0019AA52 /* AppDelegate.mm in Sources */,
-				2ECB6D7F1C3E5B630016AAA8 /* MGSubSelectVc.m in Sources */,
+				2E3F73431C3FC603004A6DE2 /* RETableViewManager.m in Sources */,
 				2ECB6D821C3E5BC30016AAA8 /* SelectBtnTableViewCell.m in Sources */,
 				2EF9D5C41C201EB500EC2EAE /* MyBlogViewController.m in Sources */,
 				2E4AADC21BFDC79800287E8B /* Base64.m in Sources */,
 				2E87E6BF1BF9CD6B005BEBD2 /* QRCodeViewController.m in Sources */,
 				2E87E6DE1BFB0790005BEBD2 /* qrspec.c in Sources */,
+				2E3F733F1C3FC603004A6DE2 /* RERadioItem.m in Sources */,
+				2E3F73411C3FC603004A6DE2 /* RETableViewCellStyle.m in Sources */,
 				2E87E6DA1BFB0790005BEBD2 /* mask.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

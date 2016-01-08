@@ -52,8 +52,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavBack:@selector(backAction)];
-    [self setNavTitle:@"二维码"];
+//    [self setNavBack:@selector(backAction)];
+//    [self setNavTitle:@"二维码"];
     self.view.backgroundColor = BGColor;
     
     _captureSession = nil;

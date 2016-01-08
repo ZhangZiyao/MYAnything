@@ -70,6 +70,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *viewController = [[NSClassFromString([_viewControllerArray objectAtIndex:indexPath.row]) alloc] init];
+    [viewController setNavTitle:[_btnNameArray objectAtIndex:indexPath.row]];
+    [viewController setNavBack:@selector(backAction)];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

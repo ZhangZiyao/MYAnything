@@ -102,8 +102,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavBack:@selector(backAction)];
-    [self setNavTitle:@"地图/定位"];
+//    [self setNavBack:@selector(backAction)];
+//    [self setNavTitle:@"地图/定位"];
     self.view.backgroundColor = BGColor;
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(pushSearchView)];
     self.navigationItem.rightBarButtonItem = rightButton;
