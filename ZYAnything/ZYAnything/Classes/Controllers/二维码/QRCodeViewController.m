@@ -85,13 +85,13 @@
     _lblStatus.text = @"二维码扫描";
     
     
-    _startScanBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-104, MAINSCREEN_WIDTH-16, 40)];
+    _startScanBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-104-64, MAINSCREEN_WIDTH-16, 40)];
     [self.view addSubview:_startScanBtn];
     [_startScanBtn setBackgroundColor:BlueBtnColor];
     [_startScanBtn setTitle:@"开始扫描" forState:UIControlStateNormal];
     [_startScanBtn addTarget:self action:@selector(startStopReading:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *zbarBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-50, MAINSCREEN_WIDTH-16, 40)];
+    UIButton *zbarBtn = [[UIButton alloc] initWithFrame:CGRectMake(8,MAINSCREEN_HEIGHT-50-64, MAINSCREEN_WIDTH-16, 40)];
     [self.view addSubview:zbarBtn];
     [zbarBtn setBackgroundColor:BlueBtnColor];
     [zbarBtn setTitle:@"用ZBar做二维码扫描" forState:UIControlStateNormal];

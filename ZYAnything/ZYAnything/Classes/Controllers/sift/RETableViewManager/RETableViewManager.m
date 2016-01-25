@@ -145,7 +145,7 @@ BOOL REDeviceIsUIKit7() {
     if ([item isKindOfClass:[RETableViewItem class]])
         cellStyle = ((RETableViewItem *)item).style;
     
-    NSString *cellIdentifier = [NSString stringWithFormat:@"RETableViewManager_%@_%i", [item class], cellStyle];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"RETableViewManager_%@_%li", [item class], (long)cellStyle];
     
     Class cellClass = [self classForCellAtIndexPath:indexPath];
     
@@ -739,7 +739,7 @@ BOOL REDeviceIsUIKit7() {
         [_delegate scrollViewWillBeginZooming:self.tableView withView:view];
 }
 
-- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale
 {
     // Forward to UIScrollView delegate
     //

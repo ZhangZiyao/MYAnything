@@ -34,9 +34,15 @@
 {
     [super viewDidLoad];
     [self setNavBack:@selector(backAction)];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = BGColor;
+    self.tableView.backgroundColor = [UIColor clearColor];
 
     _tableViewManager = [[RETableViewManager alloc] initWithTableView:self.tableView delegate:self.delegate];
     _mainSection = [[RETableViewSection alloc] init];
+    _mainSection.footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 0.01)];
+    _mainSection.headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 0.01)];
+    
     [_tableViewManager addSection:_mainSection];
     
     if (self.style)

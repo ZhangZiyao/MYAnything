@@ -54,7 +54,7 @@
 {
     __typeof (&*self) __weak weakSelf = self;
     
-    RETableViewSection *section = [RETableViewSection sectionWithHeaderTitle:@"Basic controls"];
+    RETableViewSection *section = [RETableViewSection sectionWithHeaderTitle:@"筛选订单"];
     [_manager addSection:section];
     
     // Add items to this section
