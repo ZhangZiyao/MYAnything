@@ -1,5 +1,0 @@
-platform :ios
-target ‘ZYAnything’ do
-pod 'Masonry'
-pod 'SDWebImage'
-end

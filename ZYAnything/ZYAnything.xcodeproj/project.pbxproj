@@ -29,7 +29,6 @@
 		2E4AAE301BFDD89800287E8B /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2B1BFDD89800287E8B /* zbar-helpicons.png */; };
 		2E4AAE311BFDD89800287E8B /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE2C1BFDD89800287E8B /* zbar-samples.png */; };
 		2E4AAE331BFDDA0000287E8B /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4AAE321BFDDA0000287E8B /* libzbar.a */; };
-		2E4AAE3A1BFDDE3200287E8B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2E4AAE391BFDDE3200287E8B /* Podfile */; };
 		2E87E6AE1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AB1BF97F78005BEBD2 /* BaiduMapAPI_Base.framework */; };
 		2E87E6AF1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AC1BF97F78005BEBD2 /* BaiduMapAPI_Location.framework */; };
 		2E87E6B01BF97F78005BEBD2 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E6AD1BF97F78005BEBD2 /* BaiduMapAPI_Map.framework */; };
@@ -160,7 +159,6 @@
 		2E4AAE2B1BFDD89800287E8B /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		2E4AAE2C1BFDD89800287E8B /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
 		2E4AAE321BFDDA0000287E8B /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
-		2E4AAE391BFDDE3200287E8B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2E4AAE3B1BFEBE3C00287E8B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2E4AAE3D1BFEBE5300287E8B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2E4AAE3F1BFEBE5A00287E8B /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -300,6 +298,25 @@
 				2E4AAE3F1BFEBE5A00287E8B /* AddressBookUI.framework */,
 				2E4AAE3D1BFEBE5300287E8B /* AddressBook.framework */,
 				2E4AAE3B1BFEBE3C00287E8B /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1738473B1EE10D4C002C1E9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E4AADE81BFDD4DF00287E8B /* CoreVideo.framework */,
+				2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */,
+				2E87E6C61BF9CF3A005BEBD2 /* AVFoundation.framework */,
+				2ED81D401BF8C32500127640 /* libstdc++.6.0.9.tbd */,
+				2ED81D3E1BF8C31600127640 /* CoreTelephony.framework */,
+				2ED81D3C1BF8C30800127640 /* libsqlite3.0.tbd */,
+				2ED81D3A1BF8C2FA00127640 /* Security.framework */,
+				2ED81D381BF8C2F000127640 /* CoreGraphics.framework */,
+				2ED81D361BF8C2E600127640 /* SystemConfiguration.framework */,
+				2ED81D341BF8C2D600127640 /* OpenGLES.framework */,
+				2ED81D321BF8C2CC00127640 /* QuartzCore.framework */,
+				2ED81D301BF8C2C300127640 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -567,19 +584,6 @@
 		2EFBB66C1BF5E9F80019AA52 = {
 			isa = PBXGroup;
 			children = (
-				2E4AAE391BFDDE3200287E8B /* Podfile */,
-				2E4AADE81BFDD4DF00287E8B /* CoreVideo.framework */,
-				2E4AADE61BFDD4D200287E8B /* CoreMedia.framework */,
-				2E87E6C61BF9CF3A005BEBD2 /* AVFoundation.framework */,
-				2ED81D401BF8C32500127640 /* libstdc++.6.0.9.tbd */,
-				2ED81D3E1BF8C31600127640 /* CoreTelephony.framework */,
-				2ED81D3C1BF8C30800127640 /* libsqlite3.0.tbd */,
-				2ED81D3A1BF8C2FA00127640 /* Security.framework */,
-				2ED81D381BF8C2F000127640 /* CoreGraphics.framework */,
-				2ED81D361BF8C2E600127640 /* SystemConfiguration.framework */,
-				2ED81D341BF8C2D600127640 /* OpenGLES.framework */,
-				2ED81D321BF8C2CC00127640 /* QuartzCore.framework */,
-				2ED81D301BF8C2C300127640 /* CoreLocation.framework */,
 				2EFBB6771BF5E9F80019AA52 /* ZYAnything */,
 				2EFBB6911BF5E9F80019AA52 /* ZYAnythingTests */,
 				2EFBB69C1BF5E9F80019AA52 /* ZYAnythingUITests */,
@@ -601,6 +605,7 @@
 		2EFBB6771BF5E9F80019AA52 /* ZYAnything */ = {
 			isa = PBXGroup;
 			children = (
+				1738473B1EE10D4C002C1E9A /* Frameworks */,
 				2EF326AC1BF8C1A200649C2E /* BaiduMap */,
 				2EFBB6AB1BF5EAFC0019AA52 /* Classes */,
 				2EFBB6841BF5E9F80019AA52 /* Assets.xcassets */,
@@ -838,7 +843,6 @@
 				2E87E6B21BF97F8D005BEBD2 /* mapapi.bundle in Resources */,
 				2E4AAE2F1BFDD89800287E8B /* zbar-help.html in Resources */,
 				2E4AAE311BFDD89800287E8B /* zbar-samples.png in Resources */,
-				2E4AAE3A1BFDDE3200287E8B /* Podfile in Resources */,
 				2ECB6D8D1C3E66EF0016AAA8 /* back.png in Resources */,
 				2E87E6E51BFB149E005BEBD2 /* lijitiyan@2x.png in Resources */,
 				2EFBB6851BF5E9F80019AA52 /* Assets.xcassets in Resources */,
